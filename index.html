@@ -1,77 +1,420 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bhopali Delights</title>
-  <link rel="shortcut icon" href="Images/Layer 2.png" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-
+  <link rel="shortcut icon" href="Images/Layer 2.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-
- 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-white py-3 shadow">
-  <div class="container">
-
-    <!-- Logo -->
-    <a class="navbar-brand" href="#">
-      <img
-        src="Images/Layer 2.png"
-        alt="Bhopali Delights"
-        class="img-fluid position-absolute top-0  h-auto"
-        
-      >
-    </a>
-
-    <!-- Mobile Toggle Button -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#mainNavbar"
-      aria-controls="mainNavbar"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Navigation Links -->
-    <div class="collapse navbar-collapse" id="mainNavbar">
-
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#menu">Menu</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About Us</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-
-      <a href="#"></a>
-      <a href="#menu" class="btn btn-danger rounded-3  px-4">
-        Login
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white py-3 shadow">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="Images/Layer 2.png" alt="Bhopali Delights"
+          class="img-fluid position-absolute top-0 h-auto logo-image" />
       </a>
 
-    </div>
-  </div>
-</nav>
+      <!-- Mobile Toggle Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
+      <!-- Navigation Links -->
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3 my-5 my-lg-auto">
+          <li class="nav-item mt-4 mt-lg-0">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="right-section d-flex gap-4 flex-column flex-lg-row">
+          <div
+            class="position-relative d-lg-flex align-items-center justify-content-center bg-red d-none text-white rounded-circle shadow-sm basket-icon">
+            <i class="bi bi-basket-fill fs-5 fs-md-2"></i>
+
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-warning text-dark border border-2 border-white fs-9">
+              1
+            </span>
+          </div>
+          <div class="delivery d-lg-flex d-none">
+            <div class="cycle">
+              <img src="./Images/IMAGE (10).png" alt="cycle image" class="img-fluid w-75" />
+            </div>
+            <div class="order-number d-flex flex-column g-0 gap-0 m-0 p-0">
+              <p class="m-0">delivery order</p>
+              <p class="m-0 poppins-700">
+                <a href="#" class="text-decoration-none red">+923142376378</a>
+              </p>
+            </div>
+          </div>
+          <div class="button">
+            <button href="#menu"
+              class="btn bg-red text-white rounded-3 px-4 d-flex d-lg-block text-center justify-content-center h-100vh">
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero-section  -->
+  <section class="hero-section container-fluid d-flex justify-content-center align-items-center">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-12 col-sm-10 col-lg-6 bg-white rounded-3 hero-content bg-opacity-75 p-3">
+          <h5 class="red caveat-400 fs-1 fs-5">best in town</h5>
+          <h1 class="text-uppercase poppins-700 fs-1">
+            enjoy fresh and tasty dishes with <br />
+            <span class="red"> Bhopali taste </span> <br />
+            that will make <br> your day.
+          </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Cards  -->
+  <section class="cards-section container-fluid">
+    <div class="container my-5">
+      <div class="row d-flex gap-3 align-items-center justify-content-center">
+        <div class="col-lg-5 col-sm-10 col-12 d-flex flex-column gap-5 card1-bg p-3">
+          <div class="name">
+            <h1 class="poppins-700 text-white">Chicken Biryani</h1>
+          </div>
+          <div class="button">
+            <button href="#menu" class="btn bg-red text-white rounded-3 px-2 text-center justify-content-center">
+              order now
+            </button>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-5 col-lg-3 d-flex flex-column gap-5 card2-bg p-3">
+          <div class="name">
+            <h1 class="poppins-700 text-white">Beef <br> Nihari</h1>
+          </div>
+          <div class="button">
+            <button href="#menu" class="btn bg-red text-white rounded-3 px-2 text-center justify-content-center">
+              order now
+            </button>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-5 col-lg-3 d-flex flex-column gap-5 card3-bg p-3 align-items-end">
+          <div class="name">
+            <h1 class="poppins-700 text-white">Malai <br> Boti</h1>
+          </div>
+          <div class="button">
+            <button href="#menu" class="btn bg-red text-white rounded-3 px-2 text-center justify-content-center">
+              order now
+            </button>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-10 col-lg-3 d-flex flex-column gap-5 card4-bg p-3">
+          <div class="name">
+            <h1 class="poppins-700 text-white">Tikka <br> Boti</h1>
+          </div>
+          <div class="button">
+            <button href="#menu" class="btn bg-red text-white rounded-3 px-2 text-center justify-content-center">
+              order now
+            </button>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-5 col-lg-3 d-flex flex-column gap-5 card5-bg p-3 align-items-end">
+          <div class="name">
+            <h1 class="poppins-700 text-white">Beef <br> Nihari</h1>
+          </div>
+          <div class="button">
+            <button href="#menu" class="btn bg-red text-white rounded-3 px-2 text-center justify-content-center">
+              order now
+            </button>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-5 col-lg-5 d-flex flex-column gap-5 card6-bg p-3">
+          <div class="name">
+            <h1 class="poppins-700 text-white">Halwa Puri</h1>
+          </div>
+          <div class="para">
+            <p class="text-white">Sale off 50% only this week</p>
+          </div>
+          <div class="button">
+            <button href="#menu" class="btn bg-red text-white rounded-3 px-2 text-center justify-content-center">
+              order now
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Menu  -->
+  <section class="menu container-fluid p-5">
+    <div class="container">
+      <div class="row mx-md-3 m-0">
+        <h5 class="caveat-400 red">Food Items</h5>
+        <h1 class="poppins-700">Popular <span class="red">Menu</span></h1>
+      </div>
+      <div class="row g-4 align-items-center justify-content-center mt-3 mx-md-3 m-0">
+
+
+        <div class="col-6 col-md-2 ">
+          <div class="p-1 border rounded justify-content-center align-items-center text-center bg-red text-white">
+            <img src="Images/item1.png" alt="item1" class="img-fluid">
+            <p>Chicken</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="p-1 border rounded justify-content-center align-items-center text-center">
+            <img src="Images/item2.png" alt="item1" class="img-fluid">
+            <p>Beef</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="p-1 border rounded justify-content-center align-items-center text-center">
+            <img src="Images/item3.png" alt="item1" class="img-fluid">
+            <p>Mutton</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="p-1 border rounded justify-content-center align-items-center text-center">
+            <img src="Images/item4.png" alt="item1" class="img-fluid">
+            <p>Deserts</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="p-1 border rounded justify-content-center align-items-center text-center">
+            <img src="Images/item5.png" alt="item1" class="img-fluid">
+            <p>Sweets</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="p-1 border rounded justify-content-center align-items-center text-center">
+            <img src="Images/item6.png" alt="item1" class="img-fluid">
+            <p>Veg</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="p-1 border rounded justify-content-center align-items-center text-center">
+            <img src="Images/item7.png" alt="item1" class="img-fluid">
+            <p>Chinese</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="px-1 py-2 border rounded justify-content-center align-items-center text-center">
+            <img src="Images/item8.png" alt="item1" class="img-fluid">
+            <p>Chat</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="p-1 border rounded justify-content-center align-items-center text-center">
+            <img src="Images/item9.png" alt="item1" class="img-fluid">
+            <p>Chat</p>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4 align-items-center justify-content-center mt-3 mx-md-3 m-0">
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="p-2 px-3 border rounded gap-3 align-items-center text-center d-flex flex-row">
+            <div class="items-row2-img">
+              <img src="Images/item10.png" alt="item1" class="img-fluid">
+            </div>
+            <div class="itmes-row2-text text-start">
+              <h1 class="poppins-700 fs-5">Chicken <br> biryani</h1>
+              <p>price :1200/Kg</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="p-2 px-3 border rounded gap-3 align-items-center text-center d-flex flex-row">
+            <div class="items-row2-img">
+              <img src="Images/item11.png" alt="item1" class="img-fluid">
+            </div>
+            <div class="itmes-row2-text text-start">
+              <h1 class="poppins-700 fs-5">Yakhni <br> pulao</h1>
+              <p>price :1200/Kg</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="p-2 px-3 border rounded gap-3 align-items-center text-center d-flex flex-row">
+            <div class="items-row2-img">
+              <img src="Images/item12.png" alt="item1" class="img-fluid">
+            </div>
+            <div class="itmes-row2-text text-start">
+              <h1 class="poppins-700 fs-5">Tikka <br> karhai</h1>
+              <p>price :1200/Kg</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="p-2 px-3 border rounded gap-3 align-items-center text-center d-flex flex-row">
+            <div class="items-row2-img">
+              <img src="Images/item13.png" alt="item1" class="img-fluid">
+            </div>
+            <div class="itmes-row2-text text-start">
+              <h1 class="poppins-700 fs-5">Green <br> karhai</h1>
+              <p>price :1200/Kg</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="p-2 px-3 border rounded gap-3 align-items-center text-center d-flex flex-row">
+            <div class="items-row2-img">
+              <img src="Images/item14.png" alt="item1" class="img-fluid">
+            </div>
+            <div class="itmes-row2-text text-start">
+              <h1 class="poppins-700 fs-5">White <br> biryani</h1>
+              <p>price :1200/Kg</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="p-2 px-3 border rounded gap-3 align-items-center text-center d-flex flex-row">
+            <div class="items-row2-img">
+              <img src="Images/item14.png" alt="item1" class="img-fluid">
+            </div>
+            <div class="itmes-row2-text text-start">
+              <h1 class="poppins-700 fs-5">Peshawari<br> biryani</h1>
+              <p>price :1200/Kg</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="button d-flex justify-content-center">
+          <button href="#menu" class="btn bg-red text-white rounded-3 px-2 text-center justify-content-center">
+            View All Items
+          </button>
+        </div>
+      </div>
+
+  </section>
+  <!-- Choose Us  -->
+  <section class="choose-us container-fluid p-5">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-12 col-sm-10 col-lg-6  rounded-3 bg-transparent text-center mt-5">
+          <h5 class="red caveat-400 fs-1 fs-5">Why Choose US?</h5>
+          <h1 class="poppins-700 fs-1">
+            Best Quality
+            <span class="red"> item <br>Ingredients </span>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Delivery  -->
+  <section class="section-delivery container-fluid p-3 p-lg-5 overflow-hidden">
+    <div class="container">
+      <div class="row">
+        <div class="delivery-headline">
+          <h1 class="poppins-700 text-center">Our aim is to offer Bhopali Taste</h1>
+        </div>
+        <div class="button d-flex justify-content-center mt-3">
+          <button href="#menu" class="btn bg-red text-white rounded-3 px-4 text-center justify-content-center">
+            order now
+          </button>
+        </div>
+      </div>
+      <div class="row g-4  justify-content-center  mt-3 mx-md-3 m-0">
+
+
+        <div class="col-12 col-lg-6 ">
+          <div>
+            <h5 class="red caveat-400 fs-1 fs-5">delivery</h5>
+            <h1 class="poppins-700 fs-1">
+              A Moments of <br> Delivered On <span class="red">Right <br> Time & Place</span>
+            </h1>
+            <p class="robot-400 my-3">Consistently, in this era of so many foody people visits our website ‘Bhopali
+              delights’ newly around the globe. We’re tied in with presenting crisp, desi or Mughal foods, regardless of
+              whether it implies going</p>
+            <div class="delivery d-lg-flex d-none">
+              <div class="cycle">
+                <img src="./Images/IMAGE (10).png" alt="cycle image" class="img-fluid w-75" />
+              </div>
+              <div class="order-number d-flex flex-column g-0 gap-0 m-0 p-0">
+                <p class="m-0">delivery order</p>
+                <p class="m-0 poppins-700">
+                  <a href="#" class="text-decoration-none red">+923142376378</a>
+                  <button href="#menu"
+                    class="btn bg-red text-white rounded-3 px-4 text-center justify-content-center ms-3">
+                    order now
+                  </button>
+                </p>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+
+          <div>
+            <img src="images/cycle.png" alt="cycle" class="img-fluid">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <section class="popular-items container-fluid p-3 p-lg-5">
+    <div class="container">
+      <div class="row mx-1 mx-lg-3">
+        <div class="popular-tabs d-flex  flex-lg-row flex-column justify-content-between align-items-center">
+        <div class="text-start">
+          <h5 class="red caveat-400 fs-1 fs-5">Food Items</h5>
+          <h1 class="poppins-700 fs-1">
+            Popular <span class="red">Dishes</span>
+          </h1>
+        </div>
+        <div class="tabs">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active " aria-current="page" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
