@@ -135,3 +135,7 @@ button:hover{
   background-size: cover;
   height: 100vh;
 }
+
+.popular-items{
+  background: #FFF8EE;
+}
