@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
-.outline * {
-    border: 1px solid black;
+
+/* Navbar */
+.navbar {
+  max-height: 100px;
+}
+
+
+
+.navbar .nav-link {
+  color: #252525;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #d97706;
 }
