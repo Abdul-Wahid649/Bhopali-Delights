@@ -14,6 +14,10 @@ body{
   font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
+.poppins-400 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
 .caveat-400{
   font-family: "Caveat",sans-serif;
 }
@@ -34,13 +38,13 @@ body{
 .red {
   color: #CC3333;
 }
-
+.blue{
+  color: #2A435D;
+}
 .bg-red {
   background: #CC3333;
 }
-button:hover{
-   background: red !important;
-}
+
 
 .basket-icon {
   width: 8vw;
@@ -67,6 +71,7 @@ button:hover{
   background-position: center center;
   background-size: cover;
   height: 100vh;
+  /* background-blend-mode: overlay; */
 }
 
 .hero-section h1{
@@ -138,4 +143,12 @@ button:hover{
 
 .popular-items{
   background: #FFF8EE;
+}
+
+
+footer{
+  background: url(Images/footer-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

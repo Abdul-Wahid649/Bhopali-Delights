@@ -22,11 +22,17 @@
           class="img-fluid position-absolute top-0 h-auto logo-image" />
       </a>
 
-      <!-- Mobile Toggle Button -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="d-flex gap-4 align-items-center">
+        <div
+            class="position-relative d-flex d-lg-none align-items-center justify-content-center bg-red text-white rounded-circle shadow-sm basket-icon">
+            <i class="bi bi-basket-fill fs-5 fs-md-2"></i>
+          </div>
+          <!-- Mobile Toggle Button -->
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
 
       <!-- Navigation Links -->
       <div class="collapse navbar-collapse" id="mainNavbar">
@@ -84,7 +90,7 @@
       <div class="row justify-content-md-center">
         <div class="col-12 col-sm-10 col-lg-6 bg-white rounded-3 hero-content bg-opacity-75 p-3">
           <h5 class="red caveat-400 fs-1 fs-5">best in town</h5>
-          <h1 class="text-uppercase poppins-700 fs-1">
+          <h1 class="text-uppercase poppins-700 fs-1 blue">
             enjoy fresh and tasty dishes with <br />
             <span class="red"> Bhopali taste </span> <br />
             that will make <br> your day.
@@ -171,11 +177,11 @@
 
   </section>
   <!-- Menu  -->
-  <section class="menu container-fluid p-5">
+  <section class="menu container-fluid p-3 p-lg-5">
     <div class="container">
       <div class="row mx-md-3 m-0">
         <h5 class="caveat-400 red">Food Items</h5>
-        <h1 class="poppins-700">Popular <span class="red">Menu</span></h1>
+        <h1 class="poppins-700 blue fs-1">Popular <span class="red">Menu</span></h1>
       </div>
       <div class="row g-4 align-items-center justify-content-center mt-3 mx-md-3 m-0">
 
@@ -318,7 +324,7 @@
       <div class="row justify-content-md-center">
         <div class="col-12 col-sm-10 col-lg-6  rounded-3 bg-transparent text-center mt-5">
           <h5 class="red caveat-400 fs-1 fs-5">Why Choose US?</h5>
-          <h1 class="poppins-700 fs-1">
+          <h1 class="poppins-700 fs-1 blue">
             Best Quality
             <span class="red"> item <br>Ingredients </span>
           </h1>
@@ -332,7 +338,7 @@
     <div class="container">
       <div class="row">
         <div class="delivery-headline">
-          <h1 class="poppins-700 text-center">Our aim is to offer Bhopali Taste</h1>
+          <h1 class="poppins-700 text-center blue fs-1">Our aim is to offer Bhopali Taste</h1>
         </div>
         <div class="button d-flex justify-content-center mt-3">
           <button href="#menu" class="btn bg-red text-white rounded-3 px-4 text-center justify-content-center">
@@ -346,7 +352,7 @@
         <div class="col-12 col-lg-6 ">
           <div>
             <h5 class="red caveat-400 fs-1 fs-5">delivery</h5>
-            <h1 class="poppins-700 fs-1">
+            <h1 class="poppins-700 fs-1 blue">
               A Moments of <br> Delivered On <span class="red">Right <br> Time & Place</span>
             </h1>
             <p class="robot-400 my-3">Consistently, in this era of so many foody people visits our website ‘Bhopali
@@ -388,7 +394,7 @@
         <div class="popular-tabs d-flex  flex-lg-row flex-column justify-content-between align-items-center">
         <div class="text-start">
           <h5 class="red caveat-400 fs-1 fs-5">Food Items</h5>
-          <h1 class="poppins-700 fs-1">
+          <h1 class="poppins-700 fs-1 blue">
             Popular <span class="red">Dishes</span>
           </h1>
         </div>
@@ -413,84 +419,657 @@
         </div>
         </div>
       </div>
-      <div class="row g-4 align-items-center justify-content-center mt-3 mx-md-3 m-0">
-        <div class="col-12 col-sm-6 col-md-4 p-2 px-3 border rounded">
-          <p class="bg-dark text-white px-3 d-inline">Hot</p>
-          <div class=" gap-3 align-items-center text-center d-flex flex-row mt-2">
-            <div class="items-row2-img">
-              <img src="Images/item10.png" alt="item1" class="img-fluid">
-            </div>
-            <div class="itmes-row2-text text-start">
-              <h1 class="poppins-700 fs-5">Chicken <br> biryani</h1>
-              <p>price :1200/Kg</p>
-            </div>
-          </div>
+     <div class="row g-4 align-items-center justify-content-center mt-3 mx-md-3 m-0"> 
+    
+    <!-- 1. Hydrabadi Qeema -->
+    <div class="col-12 col-sm-6 col-md-4"> 
+        <div class="p-3 bg-white border rounded bg-transparent h-100">
+            <span class="badge bg-dark text-white px-2 py-1 text-uppercase rounded-1">Hot</span> 
+            <div class="gap-3 align-items-center text-center d-flex flex-row mt-3"> 
+                <div class="items-row2-img"> 
+                    <img src="Images/hyderabadi-qeema.png" alt="Hydrabadi Qeema" class="img-fluid rounded-circle"> 
+                </div> 
+                <div class="itmes-row2-text text-start"> 
+                    <h1 class="poppins-700 fs-5 mb-1">Hydrabadi Qeema</h1> 
+                    <p class="m-0 red poppins-400">PKR 1500/Kg</p> 
+                </div> 
+            </div> 
         </div>
-        <div class="col-12 col-sm-6 col-md-4 p-2 px-3 border rounded">
-          <p class=" text-white px-3 d-inline"></p>
-          <div class=" gap-3 align-items-center text-center d-flex flex-row mt-2">
-            <div class="items-row2-img">
-              <img src="Images/item10.png" alt="item1" class="img-fluid">
-            </div>
-            <div class="itmes-row2-text text-start">
-              <h1 class="poppins-700 fs-5">Chicken <br> biryani</h1>
-              <p>price :1200/Kg</p>
-            </div>
-          </div>
+    </div> 
+
+    <!-- 2. Palak Gosht -->
+    <div class="col-12 col-sm-6 col-md-4"> 
+        <div class="p-3 bg-white border rounded bg-transparent h-100">
+            <span class="badge px-2 py-1 text-uppercase rounded-1 invisible">Blank</span> 
+            <div class="gap-3 align-items-center text-center d-flex flex-row mt-3"> 
+                <div class="items-row2-img"> 
+                    <img src="Images/palak-gosht.png" alt="Palak Gosht" class="img-fluid rounded-circle"> 
+                </div> 
+                <div class="itmes-row2-text text-start"> 
+                    <h1 class="poppins-700 fs-5 mb-1">Palak Gosht</h1> 
+                    <p class="m-0 red poppins-400">PKR 1300/Kg</p> 
+                </div> 
+            </div> 
         </div>
-        <div class="col-12 col-sm-6 col-md-4 p-2 px-3 border rounded">
-          <p class="bg-red text-white px-3 d-inline">NEW</p>
-          <div class=" gap-3 align-items-center text-center d-flex flex-row mt-2">
-            <div class="items-row2-img">
-              <img src="Images/item10.png" alt="item1" class="img-fluid">
-            </div>
-            <div class="itmes-row2-text text-start">
-              <h1 class="poppins-700 fs-5">Chicken <br> biryani</h1>
-              <p>price :1200/Kg</p>
-            </div>
-          </div>
+    </div> 
+
+    <!-- 3. Shahi Qorma -->
+    <div class="col-12 col-sm-6 col-md-4"> 
+        <div class="p-3 bg-white border rounded bg-transparent h-100">
+            <span class="badge bg-red text-white px-2 py-1 text-uppercase rounded-1">NEW</span> 
+            <div class="gap-3 align-items-center text-center d-flex flex-row mt-3"> 
+                <div class="items-row2-img"> 
+                    <img src="Images/shahi-qorma.png" alt="Shahi Qorma" class="img-fluid rounded-circle"> 
+                </div> 
+                <div class="itmes-row2-text text-start"> 
+                    <h1 class="poppins-700 fs-5 mb-1">Shahi Qorma</h1> 
+                    <p class="m-0 red poppins-400">PKR 1500/Kg</p> 
+                </div> 
+            </div> 
         </div>
-        <div class="col-12 col-sm-6 col-md-4 p-2 px-3 border rounded">
-          <p class="bg-dark text-white px-3 d-inline">SALE</p>
-          <div class=" gap-3 align-items-center text-center d-flex flex-row mt-2">
-            <div class="items-row2-img">
-              <img src="Images/item10.png" alt="item1" class="img-fluid">
-            </div>
-            <div class="itmes-row2-text text-start">
-              <h1 class="poppins-700 fs-5">Chicken <br> biryani</h1>
-              <p>price :1200/Kg</p>
-            </div>
-          </div>
+    </div> 
+
+    <!-- 4. Karhi Pakora -->
+    <div class="col-12 col-sm-6 col-md-4"> 
+        <div class="p-3 bg-white border rounded bg-transparent h-100">
+            <span class="badge bg-dark text-white px-2 py-1 text-uppercase rounded-1">SALE</span> 
+            <div class="gap-3 align-items-center text-center d-flex flex-row mt-3"> 
+                <div class="items-row2-img"> 
+                    <img src="Images/karhi-pakora.png" alt="Karhi Pakora" class="img-fluid rounded-circle"> 
+                </div> 
+                <div class="itmes-row2-text text-start"> 
+                    <h1 class="poppins-700 fs-5 mb-1">Karhi Pakora</h1> 
+                    <p class="m-0 red poppins-400">PKR 1500/Kg</p> 
+                </div> 
+            </div> 
         </div>
-        <div class="col-12 col-sm-6 col-md-4 p-2 px-3 border rounded">
-          <p class="bg-dark text-white px-3 d-inline">Hot</p>
-          <div class=" gap-3 align-items-center text-center d-flex flex-row mt-2">
-            <div class="items-row2-img">
-              <img src="Images/item10.png" alt="item1" class="img-fluid">
-            </div>
-            <div class="itmes-row2-text text-start">
-              <h1 class="poppins-700 fs-5">Chicken <br> biryani</h1>
-              <p>price :1200/Kg</p>
-            </div>
-          </div>
+    </div> 
+
+    <!-- 5. Baloochi Tikka Karahi -->
+    <div class="col-12 col-sm-6 col-md-4"> 
+        <div class="p-3 bg-white border rounded bg-transparent h-100">
+            <span class="badge bg-dark text-white px-2 py-1 text-uppercase rounded-1">Hot</span> 
+            <div class="gap-3 align-items-center text-center d-flex flex-row mt-3"> 
+                <div class="items-row2-img"> 
+                    <img src="Images/balochi-tikka.png" alt="Baloochi Tikka Karahi" class="img-fluid rounded-circle"> 
+                </div> 
+                <div class="itmes-row2-text text-start"> 
+                    <h1 class="poppins-700 fs-5 mb-1">Baloochi Tikka Karahi</h1> 
+                    <p class="m-0 red poppins-400">PKR 1600/Kg</p> 
+                </div> 
+            </div> 
         </div>
-        <div class="col-12 col-sm-6 col-md-4 p-2 px-3 border rounded">
-          
-          <div class=" gap-3 align-items-center text-center d-flex flex-row mt-2">
+    </div> 
+
+    <!-- 6. Bihari Boti -->
+    <div class="col-12 col-sm-6 col-md-4"> 
+        <div class="p-3 bg-white border rounded bg-transparent h-100">
+            <span class="badge px-2 py-1 text-uppercase rounded-1 invisible">Blank</span> 
+            <div class="gap-3 align-items-center text-center d-flex flex-row mt-3"> 
+                <div class="items-row2-img"> 
+                    <img src="Images/bihari-boti.png" alt="Bihari Boti" class="img-fluid rounded-circle"> 
+                </div> 
+                <div class="itmes-row2-text text-start"> 
+                    <h1 class="poppins-700 fs-5 mb-1">Bihari Boti <br> (8sticks)</h1> 
+                    <p class="m-0 red poppins-400">PKR 900/-</p> 
+                </div> 
+            </div> 
+        </div>
+    </div> 
+
+</div>
+
+
+    </div>
+
+  </section>
+  <section class="section-delivery container-fluid p-3 p-lg-5 overflow-hidden">
+    <div class="container">
+      
+      <div class="row g-4 d-flex flex-column-reverse flex-lg-row-reverse  justify-content-center  mt-3 mx-md-3 m-0">
+
+
+        <div class="col-12 col-lg-6">
+          <div class="p-3">
+            <h5 class="red caveat-400 fs-1 fs-5">Our Chef</h5>
+            <h1 class="poppins-700 fs-1 blue">
+              We Serve <span class="red"> Passion</span>
+            </h1>
+            <p class="poppins-400 my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             
-            <div class="items-row2-img">
-              <img src="Images/item10.png" alt="item1" class="img-fluid">
-            </div>
-            <div class="itmes-row2-text text-start">
-              <h1 class="poppins-700 fs-5">Chicken <br> biryani</h1>
-              <p>price :1200/Kg</p>
-            </div>
+
           </div>
         </div>
+        <div class="col-12 col-lg-6">
+
+          <div>
+            <img src="images/rafat.png" alt="cycle" class="img-fluid">
+          </div>
+        </div>
+
       </div>
     </div>
 
   </section>
+ 
+
+<section class="py-5 position-relative overflow-hidden" style="background-color: #FFF8EE;">
+  <div class="container py-4">
+
+    <!-- Section Heading -->
+    <div class="text-center mb-5">
+      <h5 class="red caveat-400 fs-5">Testimonial</h5>
+      <h2 class="poppins-700 fs-1">
+        Client <span class="red">Feedback</span>
+      </h2>
+    </div>
+
+    <!-- ================================= -->
+    <!-- DESKTOP CAROUSEL: 2 Cards, 3 Slides -->
+    <!-- ================================= -->
+    <div id="testimonialDesktop"
+         class="carousel slide d-none d-lg-block"
+         data-bs-ride="carousel"
+         data-bs-interval="4000">
+
+      <div class="carousel-inner px-2">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row g-4 justify-content-center align-items-stretch">
+
+            <!-- Card 1 -->
+            <div class="col-lg-5">
+              <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
+                <div class="d-flex align-items-center mb-3">
+                  <img src="Images/client1.png" alt="Jameel"
+                       class="rounded-3 me-3 object-fit-cover"
+                       width="75" height="75">
+                  <div>
+                    <h5 class="mb-0 fw-semibold text-dark fs-6">Jameel</h5>
+                    <p class="mb-0 text-muted small">CEO A4Tech Ltd.</p>
+                  </div>
+                </div>
+                <p class="card-text text-secondary lh-base small mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-5">
+              <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
+                <div class="d-flex align-items-center mb-3">
+                  <img src="Images/client2.png" alt="Lubna Khan"
+                       class="rounded-3 me-3 object-fit-cover"
+                       width="75" height="75">
+                  <div>
+                    <h5 class="mb-0 fw-semibold text-dark fs-6">Lubna Khan</h5>
+                    <p class="mb-0 text-muted small">CEO A4Tech Ltd.</p>
+                  </div>
+                </div>
+                <p class="card-text text-secondary lh-base small mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row g-4 justify-content-center align-items-stretch">
+
+            <!-- Card 3 -->
+            <div class="col-lg-5">
+              <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
+                <div class="d-flex align-items-center mb-3">
+                  <img src="Images/client1.png" alt="Asif Ali"
+                       class="rounded-3 me-3 object-fit-cover"
+                       width="75" height="75">
+                  <div>
+                    <h5 class="mb-0 fw-semibold text-dark fs-6">Asif Ali</h5>
+                    <p class="mb-0 text-muted small">Manager Tech</p>
+                  </div>
+                </div>
+                <p class="card-text text-secondary lh-base small mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-lg-5">
+              <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
+                <div class="d-flex align-items-center mb-3">
+                  <img src="Images/client2.png" alt="Sana Malik"
+                       class="rounded-3 me-3 object-fit-cover"
+                       width="75" height="75">
+                  <div>
+                    <h5 class="mb-0 fw-semibold text-dark fs-6">Sana Malik</h5>
+                    <p class="mb-0 text-muted small">Director HR</p>
+                  </div>
+                </div>
+                <p class="card-text text-secondary lh-base small mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="row g-4 justify-content-center align-items-stretch">
+
+            <!-- Card 5 -->
+            <div class="col-lg-5">
+              <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
+                <div class="d-flex align-items-center mb-3">
+                  <img src="Images/client1.png" alt="Zeeshan"
+                       class="rounded-3 me-3 object-fit-cover"
+                       width="75" height="75">
+                  <div>
+                    <h5 class="mb-0 fw-semibold text-dark fs-6">Zeeshan</h5>
+                    <p class="mb-0 text-muted small">CTO Global</p>
+                  </div>
+                </div>
+                <p class="card-text text-secondary lh-base small mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-lg-5">
+              <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
+                <div class="d-flex align-items-center mb-3">
+                  <img src="Images/client2.png" alt="Ayesha"
+                       class="rounded-3 me-3 object-fit-cover"
+                       width="75" height="75">
+                  <div>
+                    <h5 class="mb-0 fw-semibold text-dark fs-6">Ayesha</h5>
+                    <p class="mb-0 text-muted small">Product Designer</p>
+                  </div>
+                </div>
+                <p class="card-text text-secondary lh-base small mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Desktop Indicators: 3 Dots -->
+      
+<div class="carousel-indicators position-static mt-4 mb-0 gap-2">
+  <button type="button"
+          data-bs-target="#testimonialDesktop"
+          data-bs-slide-to="0"
+          class="active bg-secondary rounded-circle border-0"
+          style="width: 10px; height: 10px;"
+          aria-current="true"
+          aria-label="Slide 1"></button>
+
+  <button type="button"
+          data-bs-target="#testimonialDesktop"
+          data-bs-slide-to="1"
+          class="bg-secondary rounded-circle border-0"
+          style="width: 10px; height: 10px;"
+          aria-label="Slide 2"></button>
+
+  <button type="button"
+          data-bs-target="#testimonialDesktop"
+          data-bs-slide-to="2"
+          class="bg-secondary rounded-circle border-0"
+          style="width: 10px; height: 10px;"
+          aria-label="Slide 3"></button>
+</div>
+
+
+    </div>
+
+
+    <!-- ======================================= -->
+    <!-- MOBILE + TABLET CAROUSEL: 1 Card, 6 Slides -->
+    <!-- ======================================= -->
+    <div id="testimonialMobile"
+         class="carousel slide d-lg-none"
+         data-bs-ride="carousel"
+         data-bs-interval="4000">
+
+      <div class="carousel-inner px-2">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
+            <div class="d-flex align-items-center mb-3">
+              <img src="Images/client1.png" alt="Jameel"
+                   class="rounded-3 me-3 object-fit-cover"
+                   width="75" height="75">
+              <div>
+                <h5 class="mb-0 fw-semibold text-dark fs-6">Jameel</h5>
+                <p class="mb-0 text-muted small">CEO A4Tech Ltd.</p>
+              </div>
+            </div>
+            <p class="card-text text-secondary lh-base small mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
+            <div class="d-flex align-items-center mb-3">
+              <img src="Images/client2.png" alt="Lubna Khan"
+                   class="rounded-3 me-3 object-fit-cover"
+                   width="75" height="75">
+              <div>
+                <h5 class="mb-0 fw-semibold text-dark fs-6">Lubna Khan</h5>
+                <p class="mb-0 text-muted small">CEO A4Tech Ltd.</p>
+              </div>
+            </div>
+            <p class="card-text text-secondary lh-base small mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
+            <div class="d-flex align-items-center mb-3">
+              <img src="Images/client1.png" alt="Asif Ali"
+                   class="rounded-3 me-3 object-fit-cover"
+                   width="75" height="75">
+              <div>
+                <h5 class="mb-0 fw-semibold text-dark fs-6">Asif Ali</h5>
+                <p class="mb-0 text-muted small">Manager Tech</p>
+              </div>
+            </div>
+            <p class="card-text text-secondary lh-base small mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="carousel-item">
+          <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
+            <div class="d-flex align-items-center mb-3">
+              <img src="Images/client2.png" alt="Sana Malik"
+                   class="rounded-3 me-3 object-fit-cover"
+                   width="75" height="75">
+              <div>
+                <h5 class="mb-0 fw-semibold text-dark fs-6">Sana Malik</h5>
+                <p class="mb-0 text-muted small">Director HR</p>
+              </div>
+            </div>
+            <p class="card-text text-secondary lh-base small mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="carousel-item">
+          <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
+            <div class="d-flex align-items-center mb-3">
+              <img src="Images/client1.png" alt="Zeeshan"
+                   class="rounded-3 me-3 object-fit-cover"
+                   width="75" height="75">
+              <div>
+                <h5 class="mb-0 fw-semibold text-dark fs-6">Zeeshan</h5>
+                <p class="mb-0 text-muted small">CTO Global</p>
+              </div>
+            </div>
+            <p class="card-text text-secondary lh-base small mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="carousel-item">
+          <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
+            <div class="d-flex align-items-center mb-3">
+              <img src="Images/client2.png" alt="Ayesha"
+                   class="rounded-3 me-3 object-fit-cover"
+                   width="75" height="75">
+              <div>
+                <h5 class="mb-0 fw-semibold text-dark fs-6">Ayesha</h5>
+                <p class="mb-0 text-muted small">Product Designer</p>
+              </div>
+            </div>
+            <p class="card-text text-secondary lh-base small mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Mobile + Tablet Indicators: 6 Dots -->
+     
+<div class="carousel-indicators position-static mt-4 mb-0 gap-1">
+
+  <button type="button" data-bs-target="#testimonialMobile"
+          data-bs-slide-to="0"
+          class="active bg-secondary rounded-circle border-0"
+          style="width: 10px; height: 10px;"
+          aria-current="true" aria-label="Slide 1"></button>
+
+  <button type="button" data-bs-target="#testimonialMobile"
+          data-bs-slide-to="1"
+          class="bg-secondary rounded-circle border-0"
+          style="width: 10px; height: 10px;"
+          aria-label="Slide 2"></button>
+
+  <button type="button" data-bs-target="#testimonialMobile"
+          data-bs-slide-to="2"
+          class="bg-secondary rounded-circle border-0"
+          style="width: 10px; height: 10px;"
+          aria-label="Slide 3"></button>
+
+  <button type="button" data-bs-target="#testimonialMobile"
+          data-bs-slide-to="3"
+          class="bg-secondary rounded-circle border-0"
+          style="width: 10px; height: 10px;"
+          aria-label="Slide 4"></button>
+
+  <button type="button" data-bs-target="#testimonialMobile"
+          data-bs-slide-to="4"
+          class="bg-secondary rounded-circle border-0"
+          style="width: 10px; height: 10px;"
+          aria-label="Slide 5"></button>
+
+  <button type="button" data-bs-target="#testimonialMobile"
+          data-bs-slide-to="5"
+          class="bg-secondary rounded-circle border-0"
+          style="width: 10px; height: 10px;"
+          aria-label="Slide 6"></button>
+
+</div>
+
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="position-relative overflow-hidden bg-white">
+
+  <div class="container position-relative py-5">
+
+    <!-- Newsletter Section -->
+    <div class="row align-items-center gy-4 pb-5">
+
+      <!-- Heading -->
+      <div class="col-12 col-lg-5">
+        <h2 class="fw-bold mb-0 text-center text-lg-start"
+            style="color: #304966;">
+          Our Weekly <span class="text-danger">Newsletter.</span>
+        </h2>
+      </div>
+
+      <!-- Newsletter Form -->
+      <div class="col-12 col-lg-7">
+        <form class="row g-2 justify-content-center justify-content-lg-end">
+
+          <div class="col-12 col-sm-7">
+            <div class="input-group">
+              <span class="input-group-text bg-white border-end-0">
+                <i class="bi bi-envelope text-secondary"></i>
+              </span>
+
+              <input type="email"
+                     class="form-control border-start-0 shadow-none py-3"
+                     placeholder="Enter Email Address"
+                     aria-label="Email address"
+                     required>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-4">
+            <button type="submit"
+                    class="btn btn-danger w-100 py-3">
+              Subscribe
+            </button>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Divider -->
+    <hr class="border-danger border-2 opacity-100 mb-5">
+
+    <!-- Footer Information -->
+    <div class="row gy-4 pb-4">
+
+      <!-- About Column -->
+      <div class="col-12 col-md-4 col-lg-3">
+        <h5 class="mb-4 fs-6" style="color: #304966;">
+          Bhopali Delights
+        </h5>
+
+        <p class="text-secondary lh-lg mb-0">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+        </p>
+      </div>
+
+      <!-- Categories Column -->
+      <div class="col-6 col-md-4 col-lg-3 offset-lg-1">
+        <h5 class="mb-4 fs-6" style="color: #304966;">
+          Product Categories
+        </h5>
+
+        <ul class="list-unstyled mb-0">
+          <li class="mb-2"><a href="#" class="text-decoration-none small" style="color:#304966;">Chicken</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none small" style="color:#304966;">Beef</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none small" style="color:#304966;">Mutton</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none small" style="color:#304966;">Desserts</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none small" style="color:#304966;">Sweets</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none small" style="color:#304966;">Veg</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none small" style="color:#304966;">Chinese</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none small" style="color:#304966;">Chat</a></li>
+          <li><a href="#" class="text-decoration-none small" style="color:#304966;">Frozen items</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Column -->
+      <div class="col-12 col-md-4 col-lg-4">
+        <h5 class="mb-4 fs-6" style="color: #304966;">
+          Bhopali Delights
+        </h5>
+
+        <div class="d-flex align-items-center gap-3 mb-4">
+          <i class="bi bi-telephone-outbound text-danger fs-5"></i>
+          <a href="tel:+923142376378"
+             class="text-decoration-none"
+             style="color:#304966;">
+            +923142376378
+          </a>
+        </div>
+
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <i class="bi bi-envelope text-danger fs-5"></i>
+          <a href="mailto:info@bhopalidelights.com"
+             class="text-decoration-none small"
+             style="color:#304966;">
+            info@bhopalidelights.com
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Center Logo -->
+    <div class="text-center mt-4">
+      <a href="#" class="d-inline-block">
+        <img src="Images/Layer 2.png"
+             alt="Bhopali Delights Logo"
+             class="img-fluid"
+             style="width: 100px;">
+      </a>
+    </div>
+
+    <!-- Footer Navigation -->
+    <nav class="mt-3 pb-3" aria-label="Footer navigation">
+      <ul class="list-unstyled d-flex flex-wrap justify-content-center align-items-center gap-4 gap-md-5 mb-0">
+        <li>
+          <a href="index.html"
+             class="text-decoration-none small"
+             style="color:#304966;">HOME</a>
+        </li>
+        <li>
+          <a href="menu.html"
+             class="text-decoration-none small"
+             style="color:#304966;">MENU</a>
+        </li>
+        <li>
+          <a href="about.html"
+             class="text-decoration-none small"
+             style="color:#304966;">ABOUT US</a>
+        </li>
+        <li>
+          <a href="contact.html"
+             class="text-decoration-none small"
+             style="color:#304966;">CONTACT US</a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</footer>
+
+
+
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
