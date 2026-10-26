@@ -6,7 +6,8 @@
   margin: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   overflow-x: hidden;
 }
 
@@ -14,15 +15,18 @@ body{
   font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
+
 .poppins-400 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
-.caveat-400{
-  font-family: "Caveat",sans-serif;
+
+.caveat-400 {
+  font-family: "Caveat", sans-serif;
 }
-.robot-400{
-  font-family: "Roboto",sans-serif;
+
+.roboto-400 {
+  font-family: "Roboto", sans-serif;
 }
 
 
@@ -38,9 +42,11 @@ body{
 .red {
   color: #CC3333;
 }
-.blue{
+
+.blue {
   color: #2A435D;
 }
+
 .bg-red {
   background: #CC3333;
 }
@@ -65,8 +71,9 @@ body{
 .navbar .nav-link.active {
   color: #d97706;
 }
- /* Hero Section  */
-.hero-section{
+
+/* Hero Section  */
+.hero-section {
   background: url(./Images/Rectangle.png);
   background-position: center center;
   background-size: cover;
@@ -74,40 +81,44 @@ body{
   /* background-blend-mode: overlay; */
 }
 
-.hero-section h1{
+.hero-section h1 {
   font-size: 60px;
 }
 
 /* Section-2  */
-.card1-bg{
+.card1-bg {
   background: url(Images/Frame\ \(6\).png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 270px;
 }
-.card2-bg{
+
+.card2-bg {
   background: url(Images/Frame\ \(7\).png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 270px;
 }
-.card3-bg{
+
+.card3-bg {
   background: url(Images/Frame\ \(4\).png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 270px;
 }
-.card4-bg{
+
+.card4-bg {
   background: url(Images/Frame\ \(8\).png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 270px;
 }
-.card5-bg{
+
+.card5-bg {
   background: url(Images/Group\ 34079.png);
   background-position: center center;
   background-size: cover;
@@ -115,7 +126,7 @@ body{
   height: 270px;
 }
 
-.card6-bg{
+.card6-bg {
   background: url(Images/Frame\ \(10\).png);
   background-position: center center;
   background-size: cover;
@@ -123,32 +134,61 @@ body{
   height: 270px;
 }
 
-.para{
-  font-family:"Roboto",sans-serif;
+.para {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 
 /* MENU  */
-.item:active{
+.item:active {
   background: #CC3333;
 }
 
 /* Choose Us  */
-.choose-us{
+.choose-us {
   background: url(Images/Frame\ \(14\).png);
   background-position: center center;
   background-size: cover;
   height: 100vh;
 }
 
-.popular-items{
+.popular-items {
   background: #FFF8EE;
 }
 
 
-footer{
+.home-footer {
   background: url(Images/footer-bg.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+
+
+/* Contact Page  */
+
+
+
+.hero-contact {
+  height: 65vh;
+  margin-top: -100px;
+  background: url(Images/contact-bg-hero.png), url(Images/contact-bg-hero-2.png);
+  background-position: start center;
+  background-size: cover;
+
+}
+
+.contact-footer{
+  background:url(Images/contact-footer-bg2.png), url(Images/contact-footer-bg.png);
+  background-size: cover;
+  background-position: start start;
+}
+
+.yellow{
+  color: #FF9933;
+}
+
+.form-card{
+  margin-left: -75px !important;
 }
