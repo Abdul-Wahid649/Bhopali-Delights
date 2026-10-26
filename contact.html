@@ -17,13 +17,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
     />
-     <script
-  src="https://www.google.com/recaptcha/api.js"
-  async
-  defer
-></script>
-    
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <link rel="stylesheet" href="style.css" />
+    
   </head>
 
   <body>
@@ -56,6 +53,7 @@
       </div>
     </nav>
     <!-- Main Navbar  -->
+
     <nav
       class="navbar container-fluid navbar-expand-lg bg-transparent py-3 contact-navbar text-white"
     >
@@ -69,73 +67,61 @@
           />
         </a>
 
-        <div class="d-flex gap-3 align-items-center">
-          <div
-            class="position-relative d-flex d-lg-none align-items-center justify-content-center gap-2"
+        <!-- Mobile Basket + Toggle -->
+        <div class="d-flex gap-3 align-items-center d-lg-none">
+          <a
+            href="#"
+            class="d-flex align-items-center justify-content-center text-white border border-secondary rounded-circle"
+            style="width: 42px; height: 42px; text-decoration: none"
           >
-            <!-- 3. Shopping Basket Icon (Cart) -->
-
-            <a
-              href="#"
-              class="d-flex align-items-center justify-content-center text-white border border-secondary rounded-circle"
-              style="width: 42px; height: 42px; text-decoration: none"
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              fill="currentColor"
+              viewBox="0 0 16 16"
             >
-              <svg
-                xmlns="http://w3.org"
-                width="18"
-                height="18"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 0 0-1 0v3a.5.5 0 0 0 1 0v-3zm4.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 1 0v-3a.5.5 0 0 0-.5-.5zm4.5.5a.5.5 0 0 0-1 0v3a.5.5 0 0 0 1 0v-3z"
-                />
-              </svg>
-            </a>
-          </div>
-          <!-- Mobile Toggle Button -->
+              <path
+                d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 0 0-1 0v3a.5.5 0 0 0 1 0v-3zm4.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 1 0v-3a.5.5 0 0 0-.5-.5zm4.5.5a.5.5 0 0 0-1 0v3a.5.5 0 0 0 1 0v-3z"
+              />
+            </svg>
+          </a>
+
           <button
-            class="navbar-toggler border-0 bg-white"
+            class="navbar-toggler border-0 bg-white shadow-none"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNavbar"
-            aria-controls="mainNavbar"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#contactMobileNavbar"
+            aria-controls="contactMobileNavbar"
+            aria-label="Open navigation"
           >
-            <span class="navbar-toggler-icon text-white"></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
         </div>
 
-        <!-- Navigation Links -->
-        <div class="collapse navbar-collapse" id="mainNavbar">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3 my-5 my-lg-auto">
-            <li class="nav-item mt-4 mt-lg-0">
-              <a class="nav-link active text-white" href="index.html">Home</a>
+        <!-- Desktop Navigation: Transparent -->
+        <div class="collapse navbar-collapse d-none d-lg-flex">
+          <ul class="navbar-nav mx-auto mb-0 gap-lg-3">
+            <li class="nav-item">
+              <a class="nav-link text-white active" href="index.html">Home</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link text-white" href="#menu">Menu</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link text-white" href="about.html">About Us</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link text-white" href="contact.html">Contact</a>
             </li>
           </ul>
-          <div class="right-section d-flex gap-4 flex-column flex-lg-row">
-            <div class="d-flex gap-3 justify-content-center">
-              <!-- 1. Heart Icon (Wishlist) -->
-              <a
-                href="#"
-                class="d-flex align-items-center justify-content-center text-white border border-secondary rounded-circle"
-                style="width: 42px; height: 42px; text-decoration: none"
-              >
+
+          <div class="right-section d-flex gap-4 align-items-center">
+            <!-- Wishlist, Profile, Basket -->
+            <div class="d-flex gap-3">
+              <a href="#" class="contact-icon">
                 <svg
-                  xmlns="http://w3.org"
+                  xmlns="http://www.w3.org/2000/svg"
                   width="18"
                   height="18"
                   fill="currentColor"
@@ -147,14 +133,9 @@
                 </svg>
               </a>
 
-              <!-- 2. User/Profile Icon -->
-              <a
-                href="#"
-                class="d-flex align-items-center justify-content-center text-white border border-secondary rounded-circle"
-                style="width: 42px; height: 42px; text-decoration: none"
-              >
+              <a href="#" class="contact-icon">
                 <svg
-                  xmlns="http://w3.org"
+                  xmlns="http://www.w3.org/2000/svg"
                   width="18"
                   height="18"
                   fill="currentColor"
@@ -166,14 +147,9 @@
                 </svg>
               </a>
 
-              <!-- 3. Shopping Basket Icon (Cart) -->
-              <a
-                href="#"
-                class="d-flex align-items-center justify-content-center text-white border border-secondary rounded-circle"
-                style="width: 42px; height: 42px; text-decoration: none"
-              >
+              <a href="#" class="contact-icon">
                 <svg
-                  xmlns="http://w3.org"
+                  xmlns="http://www.w3.org/2000/svg"
                   width="18"
                   height="18"
                   fill="currentColor"
@@ -186,18 +162,88 @@
               </a>
             </div>
 
-            <div class="button">
-              <button
-                href="#menu"
-                class="btn bg-red text-white rounded-3 px-4 d-flex d-lg-block text-center justify-content-center h-100vh"
-              >
-                Login
-              </button>
-            </div>
+            <a href="#menu" class="btn bg-red text-white rounded-3 px-4">
+              Login
+            </a>
           </div>
         </div>
       </div>
     </nav>
+
+    
+
+      <!-- Mobile Offcanvas -->
+      <div
+        class="offcanvas offcanvas-start bg-white"
+        tabindex="-1"
+        id="contactMobileNavbar"
+        aria-labelledby="contactMobileNavbarLabel"
+      >
+        <!-- Header -->
+        <div class="offcanvas-header border-bottom bg-white">
+          <h5 class="offcanvas-title text-dark" id="contactMobileNavbarLabel">
+            Menu
+          </h5>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <!-- Body -->
+        <div class="offcanvas-body bg-white">
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark"
+                href="index.html"
+                data-bs-dismiss="offcanvas"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark"
+                href="#menu"
+                data-bs-dismiss="offcanvas"
+                >Menu</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark"
+                href="about.html"
+                data-bs-dismiss="offcanvas"
+                >About Us</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark"
+                href="contact.html"
+                data-bs-dismiss="offcanvas"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <a
+            href="#menu"
+            class="btn bg-red text-white rounded-3 w-100 mt-4"
+            data-bs-dismiss="offcanvas"
+          >
+            Login
+          </a>
+        </div>
+      </div>
+    
+
     <!-- Hero section  -->
     <section
       class="hero-contact text-center align-items-center d-flex justify-content-center container-fluid"
@@ -218,10 +264,10 @@
       </div>
     </section>
     <!-- Main Section  -->
-    <div class="container-fluid m-3 m-lg-5">
-      <div class="container m-3 p-5">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-6">
+    <div class=" m-3 m-lg-5 ">
+      <div class="container m-0 p-0 p-lg-5 ">
+        <div class="row align-items-center overflow-hidden d-flex flex-column flex-lg-row m-0 m-md-auto g-3">
+          <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
             <img
               src="Images/contact-main-image.png"
               alt="contact-main-image"
@@ -230,8 +276,7 @@
           </div>
           <div class="col-12 col-md-6">
             <div
-              class="card border-0 shadow p-2 p-md-4 bg-white position-relative form-card"
-              
+              class="card border-0 shadow p-2 p-md-4 bg-white position-md-relative form-card w-100vw"
             >
               <!-- Heading Section -->
               <h2 class="poppins-700 fs-2 mb-4">
@@ -246,7 +291,7 @@
                     type="text"
                     class="form-control py-2 px-3 roboto-400 text-muted border-secondary-subtle"
                     placeholder="Name"
-                    style="box-shadow: none"
+                    
                   />
                 </div>
 
@@ -256,7 +301,7 @@
                     type="tel"
                     class="form-control py-2 px-3 roboto-400 text-muted border-secondary-subtle"
                     placeholder="Phone"
-                    style="box-shadow: none"
+                    
                   />
                 </div>
 
@@ -266,13 +311,15 @@
                     class="form-control py-2 px-3 roboto-400 text-muted border-secondary-subtle"
                     rows="3"
                     placeholder="Comment or Message"
-                    style="box-shadow: none; resize: none"
+                    
                   ></textarea>
                 </div>
                 <div class="mb-4">
-                  <div class="g-recaptcha" data-sitekey="6LcjjAEuAAAAAK_lmojKiLnX2nnKED2CeS3J09Fw"></div>
+                  <div
+                    class="g-recaptcha"
+                    data-sitekey="6LcjjAEuAAAAAK_lmojKiLnX2nnKED2CeS3J09Fw"
+                  ></div>
                 </div>
-                
 
                 <!-- Submit Button -->
                 <button
@@ -290,7 +337,6 @@
     <!-- footer  -->
     <footer class="contact-footer text-white pt-5">
       <div class="container">
-        <!-- Top Bar: Feel Hunger Section -->
         <!-- Top Bar: Feel Hunger Section -->
         <div
           class="row align-items-center mb-5 pb-4 border-bottom border-secondary border-opacity-25"
@@ -470,11 +516,13 @@
                 class="powered-by d-flex gap-1 align-items-center justify-content-center"
               >
                 <p class="blue m-0 roboto-400">Powered By:</p>
+                <a href="https://www.digitechinfra.com/" class="text-decoration-none" target="_blank">
                 <img
                   src="./Images/digitechinfra.png"
                   alt="digitechinfra-logo"
                   class="img-fluid"
                 />
+                </a>
               </div>
               <div class="copy-right">
                 <p class="blue roboto-400 m-0">
@@ -487,5 +535,8 @@
         </div>
       </div>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

@@ -14,76 +14,191 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-white py-3 shadow">
-    <div class="container">
-      <!-- Logo -->
-      <a class="navbar-brand" href="#">
-        <img src="Images/Layer 2.png" alt="Bhopali Delights"
-          class="img-fluid position-absolute top-0 h-auto logo-image" />
-      </a>
+<nav class="navbar navbar-expand-lg bg-white py-3 shadow">
+  <div class="container">
 
-      <div class="d-flex gap-4 align-items-center">
-        <div
-          class="position-relative d-flex d-lg-none align-items-center justify-content-center bg-red text-white rounded-circle shadow-sm basket-icon">
-          <i class="bi bi-basket-fill fs-5 fs-md-2"></i>
-        </div>
-        <!-- Mobile Toggle Button -->
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-          aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="Images/Layer 2.png" alt="Bhopali Delights"
+        class="img-fluid position-absolute top-0 h-auto logo-image" />
+    </a>
+
+    <!-- Mobile Basket + Toggle -->
+    <div class="d-flex gap-4 align-items-center d-lg-none">
+
+      <div class="position-relative d-flex align-items-center justify-content-center
+                  bg-red text-white rounded-circle shadow-sm basket-icon">
+        <i class="bi bi-basket-fill fs-5"></i>
       </div>
 
-      <!-- Navigation Links -->
-      <div class="collapse navbar-collapse" id="mainNavbar">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3 my-5 my-lg-auto">
-          <li class="nav-item mt-4 mt-lg-0">
-            <a class="nav-link active" href="index.html">Home</a>
-          </li>
+      <button class="navbar-toggler border-0 shadow-none"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#mobileNavbar"
+        aria-controls="mobileNavbar"
+        aria-label="Open navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#menu">Menu</a>
-          </li>
+    </div>
 
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
-          </li>
+    <!-- Desktop Navbar -->
+    <div class="collapse navbar-collapse d-none d-lg-flex">
 
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-        <div class="right-section d-flex gap-4 flex-column flex-lg-row">
-          <div
-            class="position-relative d-lg-flex align-items-center justify-content-center bg-red d-none text-white rounded-circle shadow-sm basket-icon">
-            <i class="bi bi-basket-fill fs-5 fs-md-2"></i>
+      <ul class="navbar-nav mx-auto mb-0 gap-lg-3">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
 
-            <span
-              class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-warning text-dark border border-2 border-white fs-9">
-              1
-            </span>
+        <li class="nav-item">
+          <a class="nav-link" href="#menu">Menu</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+
+      <div class="right-section d-flex gap-4 align-items-center">
+
+        <!-- Desktop Basket -->
+        <div class="position-relative d-flex align-items-center justify-content-center
+                    bg-red text-white rounded-circle shadow-sm basket-icon">
+          <i class="bi bi-basket-fill fs-5"></i>
+
+          <span class="position-absolute top-0 start-100 translate-middle
+                       badge rounded-circle bg-warning text-dark
+                       border border-2 border-white">
+            1
+          </span>
+        </div>
+
+        <!-- Delivery -->
+        <div class="delivery d-flex">
+          <div class="cycle">
+            <img src="./Images/IMAGE (10).png" alt="cycle image"
+              class="img-fluid w-75" />
           </div>
-          <div class="delivery d-lg-flex d-none">
-            <div class="cycle">
-              <img src="./Images/IMAGE (10).png" alt="cycle image" class="img-fluid w-75" />
-            </div>
-            <div class="order-number d-flex flex-column g-0 gap-0 m-0 p-0">
-              <p class="m-0">delivery order</p>
-              <p class="m-0 poppins-700">
-                <a href="#" class="text-decoration-none red">+923142376378</a>
-              </p>
-            </div>
-          </div>
-          <div class="button">
-            <button href="#menu"
-              class="btn bg-red text-white rounded-3 px-4 d-flex d-lg-block text-center justify-content-center h-100vh">
-              Login
-            </button>
+
+          <div class="order-number d-flex flex-column gap-0">
+            <p class="m-0">delivery order</p>
+            <p class="m-0 poppins-700">
+              <a href="#" class="text-decoration-none red">
+                +923142376378
+              </a>
+            </p>
           </div>
         </div>
+
+        <!-- Login -->
+        <div class="button">
+          <a href="#menu"
+            class="btn bg-red text-white rounded-3 px-4 d-flex
+                   align-items-center justify-content-center">
+            Login
+          </a>
+        </div>
+
       </div>
     </div>
-  </nav>
+
+  </div>
+</nav>
+
+
+<!-- Mobile Offcanvas Menu -->
+<div class="offcanvas offcanvas-start bg-white d-lg-none"
+     tabindex="-1"
+     id="mobileNavbar"
+     aria-labelledby="mobileNavbarLabel">
+
+  <!-- Offcanvas Header -->
+  <div class="offcanvas-header border-bottom">
+
+    <h5 class="offcanvas-title" id="mobileNavbarLabel">
+      Menu
+    </h5>
+
+    <button type="button"
+      class="btn-close"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close">
+    </button>
+
+  </div>
+
+  <!-- Offcanvas Body -->
+  <div class="offcanvas-body d-flex flex-column">
+
+    <ul class="navbar-nav gap-2">
+
+      <li class="nav-item">
+        <a class="nav-link py-2"
+           href="index.html"
+           data-bs-dismiss="offcanvas">
+          Home
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link py-2"
+           href="#menu"
+           data-bs-dismiss="offcanvas">
+          Menu
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link py-2"
+           href="about.html"
+           data-bs-dismiss="offcanvas">
+          About Us
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link py-2"
+           href="contact.html"
+           data-bs-dismiss="offcanvas">
+          Contact
+        </a>
+      </li>
+
+    </ul>
+
+    <!-- Mobile Delivery -->
+    <div class="delivery d-flex align-items-center gap-2 mt-4">
+      <div class="cycle">
+        <img src="./Images/IMAGE (10).png"
+          alt="cycle image" class="img-fluid"
+          style="width: 55px;" />
+      </div>
+
+      <div class="order-number">
+        <p class="m-0">Delivery Order</p>
+        <p class="m-0 poppins-700">
+          <a href="tel:+923142376378"
+             class="text-decoration-none red">
+            +923142376378
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Mobile Login -->
+    <a href="#menu"
+       class="btn bg-red text-white rounded-3 mt-4 w-100"
+       data-bs-dismiss="offcanvas">
+      Login
+    </a>
+
+  </div>
+</div>
+
   <!-- Hero-section  -->
   <section class="hero-section container-fluid d-flex justify-content-center align-items-center">
     <div class="container">
@@ -559,329 +674,7 @@
 
   </section>
 
- <!-- Testimonial  -->
-  <section class="py-5 position-relative overflow-hidden" style="background-color: #FFF8EE;">
-    <div class="container py-4">
-
-      <!-- Section Heading -->
-      <div class="text-center mb-5">
-        <h5 class="red caveat-400 fs-5">Testimonial</h5>
-        <h2 class="poppins-700 fs-1">
-          Client <span class="red">Feedback</span>
-        </h2>
-      </div>
-
-      <!-- ================================= -->
-      <!-- DESKTOP CAROUSEL: 2 Cards, 3 Slides -->
-      <!-- ================================= -->
-      <div id="testimonialDesktop" class="carousel slide d-none d-lg-block" data-bs-ride="carousel"
-        data-bs-interval="4000">
-
-        <div class="carousel-inner px-2">
-
-          <!-- Slide 1 -->
-          <div class="carousel-item active">
-            <div class="row g-4 justify-content-center align-items-stretch">
-
-              <!-- Card 1 -->
-              <div class="col-lg-5">
-                <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
-                  <div class="d-flex align-items-center mb-3">
-                    <img src="Images/client1.png" alt="Jameel" class="rounded-3 me-3 object-fit-cover" width="75"
-                      height="75">
-                    <div>
-                      <h5 class="mb-0 fw-semibold text-dark fs-6">Jameel</h5>
-                      <p class="mb-0 text-muted small">CEO A4Tech Ltd.</p>
-                    </div>
-                  </div>
-                  <p class="card-text text-secondary lh-base small mb-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Card 2 -->
-              <div class="col-lg-5">
-                <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
-                  <div class="d-flex align-items-center mb-3">
-                    <img src="Images/client2.png" alt="Lubna Khan" class="rounded-3 me-3 object-fit-cover" width="75"
-                      height="75">
-                    <div>
-                      <h5 class="mb-0 fw-semibold text-dark fs-6">Lubna Khan</h5>
-                      <p class="mb-0 text-muted small">CEO A4Tech Ltd.</p>
-                    </div>
-                  </div>
-                  <p class="card-text text-secondary lh-base small mb-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="carousel-item">
-            <div class="row g-4 justify-content-center align-items-stretch">
-
-              <!-- Card 3 -->
-              <div class="col-lg-5">
-                <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
-                  <div class="d-flex align-items-center mb-3">
-                    <img src="Images/client1.png" alt="Asif Ali" class="rounded-3 me-3 object-fit-cover" width="75"
-                      height="75">
-                    <div>
-                      <h5 class="mb-0 fw-semibold text-dark fs-6">Asif Ali</h5>
-                      <p class="mb-0 text-muted small">Manager Tech</p>
-                    </div>
-                  </div>
-                  <p class="card-text text-secondary lh-base small mb-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Card 4 -->
-              <div class="col-lg-5">
-                <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
-                  <div class="d-flex align-items-center mb-3">
-                    <img src="Images/client2.png" alt="Sana Malik" class="rounded-3 me-3 object-fit-cover" width="75"
-                      height="75">
-                    <div>
-                      <h5 class="mb-0 fw-semibold text-dark fs-6">Sana Malik</h5>
-                      <p class="mb-0 text-muted small">Director HR</p>
-                    </div>
-                  </div>
-                  <p class="card-text text-secondary lh-base small mb-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="carousel-item">
-            <div class="row g-4 justify-content-center align-items-stretch">
-
-              <!-- Card 5 -->
-              <div class="col-lg-5">
-                <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
-                  <div class="d-flex align-items-center mb-3">
-                    <img src="Images/client1.png" alt="Zeeshan" class="rounded-3 me-3 object-fit-cover" width="75"
-                      height="75">
-                    <div>
-                      <h5 class="mb-0 fw-semibold text-dark fs-6">Zeeshan</h5>
-                      <p class="mb-0 text-muted small">CTO Global</p>
-                    </div>
-                  </div>
-                  <p class="card-text text-secondary lh-base small mb-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Card 6 -->
-              <div class="col-lg-5">
-                <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
-                  <div class="d-flex align-items-center mb-3">
-                    <img src="Images/client2.png" alt="Ayesha" class="rounded-3 me-3 object-fit-cover" width="75"
-                      height="75">
-                    <div>
-                      <h5 class="mb-0 fw-semibold text-dark fs-6">Ayesha</h5>
-                      <p class="mb-0 text-muted small">Product Designer</p>
-                    </div>
-                  </div>
-                  <p class="card-text text-secondary lh-base small mb-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Desktop Indicators: 3 Dots -->
-
-        <div class="carousel-indicators position-static mt-4 mb-0 gap-2">
-          <button type="button" data-bs-target="#testimonialDesktop" data-bs-slide-to="0"
-            class="active bg-secondary rounded-circle border-0" style="width: 10px; height: 10px;" aria-current="true"
-            aria-label="Slide 1"></button>
-
-          <button type="button" data-bs-target="#testimonialDesktop" data-bs-slide-to="1"
-            class="bg-secondary rounded-circle border-0" style="width: 10px; height: 10px;"
-            aria-label="Slide 2"></button>
-
-          <button type="button" data-bs-target="#testimonialDesktop" data-bs-slide-to="2"
-            class="bg-secondary rounded-circle border-0" style="width: 10px; height: 10px;"
-            aria-label="Slide 3"></button>
-        </div>
-
-
-      </div>
-
-
-      <!-- ======================================= -->
-      <!-- MOBILE + TABLET CAROUSEL: 1 Card, 6 Slides -->
-      <!-- ======================================= -->
-      <div id="testimonialMobile" class="carousel slide d-lg-none" data-bs-ride="carousel" data-bs-interval="4000">
-
-        <div class="carousel-inner px-2">
-
-          <!-- Slide 1 -->
-          <div class="carousel-item active">
-            <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
-              <div class="d-flex align-items-center mb-3">
-                <img src="Images/client1.png" alt="Jameel" class="rounded-3 me-3 object-fit-cover" width="75"
-                  height="75">
-                <div>
-                  <h5 class="mb-0 fw-semibold text-dark fs-6">Jameel</h5>
-                  <p class="mb-0 text-muted small">CEO A4Tech Ltd.</p>
-                </div>
-              </div>
-              <p class="card-text text-secondary lh-base small mb-0">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="carousel-item">
-            <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
-              <div class="d-flex align-items-center mb-3">
-                <img src="Images/client2.png" alt="Lubna Khan" class="rounded-3 me-3 object-fit-cover" width="75"
-                  height="75">
-                <div>
-                  <h5 class="mb-0 fw-semibold text-dark fs-6">Lubna Khan</h5>
-                  <p class="mb-0 text-muted small">CEO A4Tech Ltd.</p>
-                </div>
-              </div>
-              <p class="card-text text-secondary lh-base small mb-0">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="carousel-item">
-            <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
-              <div class="d-flex align-items-center mb-3">
-                <img src="Images/client1.png" alt="Asif Ali" class="rounded-3 me-3 object-fit-cover" width="75"
-                  height="75">
-                <div>
-                  <h5 class="mb-0 fw-semibold text-dark fs-6">Asif Ali</h5>
-                  <p class="mb-0 text-muted small">Manager Tech</p>
-                </div>
-              </div>
-              <p class="card-text text-secondary lh-base small mb-0">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-
-          <!-- Slide 4 -->
-          <div class="carousel-item">
-            <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
-              <div class="d-flex align-items-center mb-3">
-                <img src="Images/client2.png" alt="Sana Malik" class="rounded-3 me-3 object-fit-cover" width="75"
-                  height="75">
-                <div>
-                  <h5 class="mb-0 fw-semibold text-dark fs-6">Sana Malik</h5>
-                  <p class="mb-0 text-muted small">Director HR</p>
-                </div>
-              </div>
-              <p class="card-text text-secondary lh-base small mb-0">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-
-          <!-- Slide 5 -->
-          <div class="carousel-item">
-            <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
-              <div class="d-flex align-items-center mb-3">
-                <img src="Images/client1.png" alt="Zeeshan" class="rounded-3 me-3 object-fit-cover" width="75"
-                  height="75">
-                <div>
-                  <h5 class="mb-0 fw-semibold text-dark fs-6">Zeeshan</h5>
-                  <p class="mb-0 text-muted small">CTO Global</p>
-                </div>
-              </div>
-              <p class="card-text text-secondary lh-base small mb-0">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-
-          <!-- Slide 6 -->
-          <div class="carousel-item">
-            <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
-              <div class="d-flex align-items-center mb-3">
-                <img src="Images/client2.png" alt="Ayesha" class="rounded-3 me-3 object-fit-cover" width="75"
-                  height="75">
-                <div>
-                  <h5 class="mb-0 fw-semibold text-dark fs-6">Ayesha</h5>
-                  <p class="mb-0 text-muted small">Product Designer</p>
-                </div>
-              </div>
-              <p class="card-text text-secondary lh-base small mb-0">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Mobile + Tablet Indicators: 6 Dots -->
-
-        <div class="carousel-indicators position-static mt-4 mb-0 gap-1">
-
-          <button type="button" data-bs-target="#testimonialMobile" data-bs-slide-to="0"
-            class="active bg-secondary rounded-circle border-0" style="width: 10px; height: 10px;" aria-current="true"
-            aria-label="Slide 1"></button>
-
-          <button type="button" data-bs-target="#testimonialMobile" data-bs-slide-to="1"
-            class="bg-secondary rounded-circle border-0" style="width: 10px; height: 10px;"
-            aria-label="Slide 2"></button>
-
-          <button type="button" data-bs-target="#testimonialMobile" data-bs-slide-to="2"
-            class="bg-secondary rounded-circle border-0" style="width: 10px; height: 10px;"
-            aria-label="Slide 3"></button>
-
-          <button type="button" data-bs-target="#testimonialMobile" data-bs-slide-to="3"
-            class="bg-secondary rounded-circle border-0" style="width: 10px; height: 10px;"
-            aria-label="Slide 4"></button>
-
-          <button type="button" data-bs-target="#testimonialMobile" data-bs-slide-to="4"
-            class="bg-secondary rounded-circle border-0" style="width: 10px; height: 10px;"
-            aria-label="Slide 5"></button>
-
-          <button type="button" data-bs-target="#testimonialMobile" data-bs-slide-to="5"
-            class="bg-secondary rounded-circle border-0" style="width: 10px; height: 10px;"
-            aria-label="Slide 6"></button>
-
-        </div>
-
-
-      </div>
-
-    </div>
-  </section>
+ 
 
 
   <!-- Footer Section -->
@@ -1043,7 +836,8 @@
           </div>
           <div class="powered-by d-flex gap-1 align-items-center justify-content-center">
             <p class="blue m-0 roboto-400">Powered By: </p>
-            <img src="./Images/digitechinfra.png" alt="digitechinfra-logo" class="img-fluid">
+            <a href="https://www.digitechinfra.com/" class="text-decoration-none" target="_blank">
+            <img src="./Images/digitechinfra.png" alt="digitechinfra-logo" class="img-fluid"></a>
 
           </div>
         </div>

@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhopali Delights</title>
+    <link rel="shortcut icon" href="Images/Layer 2.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class="navbar container-fluid navbar-expand-lg bg-transparent py-3 contact-navbar text-white">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="Images/Layer 2.png" alt="Bhopali Delights"
+                    class="img-fluid position-absolute top-0 h-auto logo-image" />
+            </a>
+
+            <!-- Mobile Basket + Toggle -->
+            <div class="d-flex gap-3 align-items-center d-lg-none">
+                <a href="#"
+                    class="d-flex align-items-center justify-content-center text-white border border-secondary rounded-circle"
+                    style="width: 42px; height: 42px; text-decoration: none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 0 0-1 0v3a.5.5 0 0 0 1 0v-3zm4.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 1 0v-3a.5.5 0 0 0-.5-.5zm4.5.5a.5.5 0 0 0-1 0v3a.5.5 0 0 0 1 0v-3z" />
+                    </svg>
+                </a>
+
+                <button class="navbar-toggler border-0 bg-white shadow-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#contactMobileNavbar" aria-controls="contactMobileNavbar"
+                    aria-label="Open navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- Desktop Navigation: Transparent -->
+            <div class="collapse navbar-collapse d-none d-lg-flex">
+                <ul class="navbar-nav mx-auto mb-0 gap-lg-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="right-section d-flex gap-4 align-items-center">
+                    <!-- Wishlist, Profile, Basket -->
+                    <div class="d-flex gap-3">
+                        <a href="#" class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                        </a>
+
+                        <a href="#" class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                            </svg>
+                        </a>
+
+                        <a href="#" class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 0 0-1 0v3a.5.5 0 0 0 1 0v-3zm4.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 1 0v-3a.5.5 0 0 0-.5-.5zm4.5.5a.5.5 0 0 0-1 0v3a.5.5 0 0 0 1 0v-3z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <a href="#menu" class="btn bg-red text-white rounded-3 px-4">
+                        Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Offcanvas -->
+    <div class="offcanvas offcanvas-start bg-white" tabindex="-1" id="contactMobileNavbar"
+        aria-labelledby="contactMobileNavbarLabel">
+        <!-- Header -->
+        <div class="offcanvas-header border-bottom bg-white">
+            <h5 class="offcanvas-title text-dark" id="contactMobileNavbarLabel">
+                Menu
+            </h5>
+
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <!-- Body -->
+        <div class="offcanvas-body bg-white">
+            <ul class="navbar-nav gap-3">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="index.html" data-bs-dismiss="offcanvas">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#menu" data-bs-dismiss="offcanvas">Menu</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="about.html" data-bs-dismiss="offcanvas">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="contact.html" data-bs-dismiss="offcanvas">Contact</a>
+                </li>
+            </ul>
+
+            <a href="#menu" class="btn bg-red text-white rounded-3 w-100 mt-4" data-bs-dismiss="offcanvas">
+                Login
+            </a>
+        </div>
+    </div>
+    <!-- Hero-section  -->
+    <section class="hero-contact text-center align-items-center d-flex justify-content-center container-fluid">
+        <div class="container mt-5 pt-4 mt-md-normal pt-md-0">
+            <div class="row text-white">
+                <h1 class="poppins-700">About</h1>
+                <p class="roboto-400">
+                    <a href="index.html" class="text-decoration-none text-white">Home</a>
+                    /
+                    <a href="about.html" class="text-decoration-none text-white">About</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- main sections  -->
+    <!-- About Company  -->
+    <section class="section-delivery container-fluid p-3 p-lg-5 overflow-hidden">
+        <div class="container">
+            <div
+                class="row g-4 d-flex flex-column flex-lg-row justify-content-center align-items-center mt-3 mx-md-3 m-0">
+                <div class="col-12 col-lg-6">
+                    <div class="p-3">
+                        <h5 class="red caveat-400 fs-1 fs-5">About Company</h5>
+                        <h1 class="poppins-700 fs-1 blue">
+                            Our <span class="red">History</span>
+                        </h1>
+                        <p class="poppins-400 my-3 text-justify text-lg-normal">
+                            Consistently, in this era of so many foody people visits our
+                            website ‘Bhopali delights’ newly around the globe. We’re tied in
+                            with presenting crisp, desi or Mughal foods, regardless of
+                            whether it implies going the traditional mile. When you stroll
+                            through our entryways, we do what we can to make everybody feel
+                            comfortable in light of the fact that our family stretches out
+                            through your locale. Today, we can be found in numerous nations
+                            and have our sights on extending much more. Be that as it may,
+                            regardless of where you discover us, quality will dependably be
+                            our formula.
+                        </p>
+                        <p>
+                            <span class="red mt-3 fw-bold fs-5">></span> We Believe in
+                            Quality. All around. Quality food can’t be made without quality
+                            initiative.
+                        </p>
+                        <p>
+                            <span class="red mt-3 fw-bold fs-5">></span> Around here, we
+                            don’t make do with anything short of food we’re glad to serve.
+                            Furthermore, we don’t simply check in.
+                        </p>
+                        <p>
+                            <span class="red mt-3 fw-bold fs-5">></span> Not when we can
+                            likewise turn into our best, make companions, and have some good
+                            times while we’re grinding away. We’re the fast food
+                            organization that lives unpacked.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div>
+                        <img src="images/history.png" alt="history" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose Us  -->
+    <section class="section-delivery container-fluid p-3 p-lg-5 overflow-hidden">
+        <div class="container">
+            <div
+                class="row g-4 d-flex flex-column-reverse flex-lg-row-reverse justify-content-center align-items-center mt-3 mx-md-3 m-0">
+                <div class="col-12 col-lg-6">
+                    <div class="p-0 p-lg-3">
+                        <h5 class="red caveat-400 fs-1 fs-5">Why Choose Us</h5>
+                        <h1 class="poppins-700 fs-1 blue">
+                            Special Care For Our Every Food & Vegetable Lover
+                        </h1>
+                        <div class="row about-row g-4">
+                            <div class="col-12 col-md-4">
+                                <div class="card shadow border-0 p-4 about-cards">
+                                    <i class="fa-solid fa-utensils  red"></i>
+                                    <h5 class="poppins-700 blue">
+                                        Fresh Food
+                                    </h5>
+                                    <p>You can place your order and you receive it within 4 hours, delivered in within
+                                        time to keep it fresh.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card shadow border-0 p-4 about-cards">
+                                    <i class="fa-solid fa-book-open red"></i>
+                                    <h5 class="poppins-700  blue">
+                                        Great Menu
+                                    </h5>
+                                    <p>You can place your order and you receive it within 4 hours, delivered in within
+                                        time to keep it fresh.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card shadow border-0 p-4 about-cards">
+                                    <i class="fa-regular red fa-truck"></i>
+                                    <h5 class="poppins-700 blue">
+                                        Fast Delivery
+                                    </h5>
+                                    <p>You can place your order and you receive it within 4 hours, delivered in within
+                                        time to keep it fresh.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div>
+                        <img src="Images/choose-us.png" alt="choose-us" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial  -->
+    <section class="py-5 position-relative overflow-hidden">
+        <div class="container py-4">
+            <!-- Section Heading -->
+            <div class="text-center mb-5">
+                <h5 class="red caveat-400 fs-5">Testimonial</h5>
+                <h2 class="poppins-700 fs-1">
+                    Client <span class="red">Feedback</span>
+                </h2>
+            </div>
+
+            <!-- ================================= -->
+            <!-- DESKTOP CAROUSEL: 2 Cards, 3 Slides -->
+            <!-- ================================= -->
+            <div id="testimonialDesktop" class="carousel slide d-none d-lg-block" data-bs-ride="carousel"
+                data-bs-interval="4000">
+                <div class="carousel-inner px-2">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row g-4 justify-content-center align-items-stretch">
+                            <!-- Card 1 -->
+                            <div class="col-lg-5">
+                                <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="Images/client1.png" alt="Jameel"
+                                            class="rounded-3 me-3 object-fit-cover" width="75" height="75" />
+                                        <div>
+                                            <h5 class="mb-0 fw-semibold text-dark fs-6">Jameel</h5>
+                                            <p class="mb-0 text-muted small">CEO A4Tech Ltd.</p>
+                                        </div>
+                                    </div>
+                                    <p class="card-text text-secondary lh-base small mb-0">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="col-lg-5">
+                                <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="Images/client2.png" alt="Lubna Khan"
+                                            class="rounded-3 me-3 object-fit-cover" width="75" height="75" />
+                                        <div>
+                                            <h5 class="mb-0 fw-semibold text-dark fs-6">
+                                                Lubna Khan
+                                            </h5>
+                                            <p class="mb-0 text-muted small">CEO A4Tech Ltd.</p>
+                                        </div>
+                                    </div>
+                                    <p class="card-text text-secondary lh-base small mb-0">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row g-4 justify-content-center align-items-stretch">
+                            <!-- Card 3 -->
+                            <div class="col-lg-5">
+                                <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="Images/client1.png" alt="Asif Ali"
+                                            class="rounded-3 me-3 object-fit-cover" width="75" height="75" />
+                                        <div>
+                                            <h5 class="mb-0 fw-semibold text-dark fs-6">
+                                                Asif Ali
+                                            </h5>
+                                            <p class="mb-0 text-muted small">Manager Tech</p>
+                                        </div>
+                                    </div>
+                                    <p class="card-text text-secondary lh-base small mb-0">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div class="col-lg-5">
+                                <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="Images/client2.png" alt="Sana Malik"
+                                            class="rounded-3 me-3 object-fit-cover" width="75" height="75" />
+                                        <div>
+                                            <h5 class="mb-0 fw-semibold text-dark fs-6">
+                                                Sana Malik
+                                            </h5>
+                                            <p class="mb-0 text-muted small">Director HR</p>
+                                        </div>
+                                    </div>
+                                    <p class="card-text text-secondary lh-base small mb-0">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="row g-4 justify-content-center align-items-stretch">
+                            <!-- Card 5 -->
+                            <div class="col-lg-5">
+                                <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="Images/client1.png" alt="Zeeshan"
+                                            class="rounded-3 me-3 object-fit-cover" width="75" height="75" />
+                                        <div>
+                                            <h5 class="mb-0 fw-semibold text-dark fs-6">Zeeshan</h5>
+                                            <p class="mb-0 text-muted small">CTO Global</p>
+                                        </div>
+                                    </div>
+                                    <p class="card-text text-secondary lh-base small mb-0">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Card 6 -->
+                            <div class="col-lg-5">
+                                <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="Images/client2.png" alt="Ayesha"
+                                            class="rounded-3 me-3 object-fit-cover" width="75" height="75" />
+                                        <div>
+                                            <h5 class="mb-0 fw-semibold text-dark fs-6">Ayesha</h5>
+                                            <p class="mb-0 text-muted small">Product Designer</p>
+                                        </div>
+                                    </div>
+                                    <p class="card-text text-secondary lh-base small mb-0">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desktop Indicators: 3 Dots -->
+
+                <div class="carousel-indicators position-static mt-4 mb-0 gap-2">
+                    <button type="button" data-bs-target="#testimonialDesktop" data-bs-slide-to="0"
+                        class="active bg-secondary rounded-circle border-0" style="width: 10px; height: 10px"
+                        aria-current="true" aria-label="Slide 1"></button>
+
+                    <button type="button" data-bs-target="#testimonialDesktop" data-bs-slide-to="1"
+                        class="bg-secondary rounded-circle border-0" style="width: 10px; height: 10px"
+                        aria-label="Slide 2"></button>
+
+                    <button type="button" data-bs-target="#testimonialDesktop" data-bs-slide-to="2"
+                        class="bg-secondary rounded-circle border-0" style="width: 10px; height: 10px"
+                        aria-label="Slide 3"></button>
+                </div>
+            </div>
+
+            <!-- ======================================= -->
+            <!-- MOBILE + TABLET CAROUSEL: 1 Card, 6 Slides -->
+            <!-- ======================================= -->
+            <div id="testimonialMobile" class="carousel slide d-lg-none" data-bs-ride="carousel"
+                data-bs-interval="4000">
+                <div class="carousel-inner px-2">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="Images/client1.png" alt="Jameel" class="rounded-3 me-3 object-fit-cover"
+                                    width="75" height="75" />
+                                <div>
+                                    <h5 class="mb-0 fw-semibold text-dark fs-6">Jameel</h5>
+                                    <p class="mb-0 text-muted small">CEO A4Tech Ltd.</p>
+                                </div>
+                            </div>
+                            <p class="card-text text-secondary lh-base small mb-0">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="Images/client2.png" alt="Lubna Khan" class="rounded-3 me-3 object-fit-cover"
+                                    width="75" height="75" />
+                                <div>
+                                    <h5 class="mb-0 fw-semibold text-dark fs-6">Lubna Khan</h5>
+                                    <p class="mb-0 text-muted small">CEO A4Tech Ltd.</p>
+                                </div>
+                            </div>
+                            <p class="card-text text-secondary lh-base small mb-0">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="Images/client1.png" alt="Asif Ali" class="rounded-3 me-3 object-fit-cover"
+                                    width="75" height="75" />
+                                <div>
+                                    <h5 class="mb-0 fw-semibold text-dark fs-6">Asif Ali</h5>
+                                    <p class="mb-0 text-muted small">Manager Tech</p>
+                                </div>
+                            </div>
+                            <p class="card-text text-secondary lh-base small mb-0">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="carousel-item">
+                        <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="Images/client2.png" alt="Sana Malik" class="rounded-3 me-3 object-fit-cover"
+                                    width="75" height="75" />
+                                <div>
+                                    <h5 class="mb-0 fw-semibold text-dark fs-6">Sana Malik</h5>
+                                    <p class="mb-0 text-muted small">Director HR</p>
+                                </div>
+                            </div>
+                            <p class="card-text text-secondary lh-base small mb-0">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="carousel-item">
+                        <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="Images/client1.png" alt="Zeeshan" class="rounded-3 me-3 object-fit-cover"
+                                    width="75" height="75" />
+                                <div>
+                                    <h5 class="mb-0 fw-semibold text-dark fs-6">Zeeshan</h5>
+                                    <p class="mb-0 text-muted small">CTO Global</p>
+                                </div>
+                            </div>
+                            <p class="card-text text-secondary lh-base small mb-0">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 6 -->
+                    <div class="carousel-item">
+                        <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-white">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="Images/client2.png" alt="Ayesha" class="rounded-3 me-3 object-fit-cover"
+                                    width="75" height="75" />
+                                <div>
+                                    <h5 class="mb-0 fw-semibold text-dark fs-6">Ayesha</h5>
+                                    <p class="mb-0 text-muted small">Product Designer</p>
+                                </div>
+                            </div>
+                            <p class="card-text text-secondary lh-base small mb-0">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile + Tablet Indicators: 6 Dots -->
+
+                <div class="carousel-indicators position-static mt-4 mb-0 gap-1">
+                    <button type="button" data-bs-target="#testimonialMobile" data-bs-slide-to="0"
+                        class="active bg-secondary rounded-circle border-0" style="width: 10px; height: 10px"
+                        aria-current="true" aria-label="Slide 1"></button>
+
+                    <button type="button" data-bs-target="#testimonialMobile" data-bs-slide-to="1"
+                        class="bg-secondary rounded-circle border-0" style="width: 10px; height: 10px"
+                        aria-label="Slide 2"></button>
+
+                    <button type="button" data-bs-target="#testimonialMobile" data-bs-slide-to="2"
+                        class="bg-secondary rounded-circle border-0" style="width: 10px; height: 10px"
+                        aria-label="Slide 3"></button>
+
+                    <button type="button" data-bs-target="#testimonialMobile" data-bs-slide-to="3"
+                        class="bg-secondary rounded-circle border-0" style="width: 10px; height: 10px"
+                        aria-label="Slide 4"></button>
+
+                    <button type="button" data-bs-target="#testimonialMobile" data-bs-slide-to="4"
+                        class="bg-secondary rounded-circle border-0" style="width: 10px; height: 10px"
+                        aria-label="Slide 5"></button>
+
+                    <button type="button" data-bs-target="#testimonialMobile" data-bs-slide-to="5"
+                        class="bg-secondary rounded-circle border-0" style="width: 10px; height: 10px"
+                        aria-label="Slide 6"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <footer class="contact-footer text-white pt-5">
+        <div class="container">
+            <!-- Top Bar: Feel Hunger Section -->
+            <div class="row align-items-center mb-5 pb-4 border-bottom border-secondary border-opacity-25">
+                <!-- 1. Start: Logo (col-md-3) -->
+                <div class="col-md-3 col-6 text-start">
+                    <img src="Images/Layer 2.png" alt="Bhopali Delights" class="img-fluid h-auto logo-image"
+                        style="max-height: 50px" />
+                </div>
+
+                <!-- 2. Center: Text (col-md-6) -->
+                <div class="col-md-6 col-12 order-3 order-md-2 mt-3 mt-md-0">
+                    <h2 class="poppins-700 m-0 fs-3 text-center">
+                        Feel Hunger! Order Your <span class="yellow">Like Food.</span>
+                    </h2>
+                </div>
+
+                <!-- 3. End: Button (col-md-3) -->
+                <div class="col-md-3 col-6 text-end order-2 order-md-3">
+                    <a href="#"
+                        class="btn bg-red px-4 py-2 text-white border-0 rounded-1 roboto-400 text-decoration-none">
+                        Order Now
+                    </a>
+                </div>
+            </div>
+
+            <div class="row align-items-center mb-5 pb-4">
+                <!-- Middle Bar: Footer Links & Info -->
+                <div class="row gy-4">
+                    <!-- Product Categories -->
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="poppins-700 mb-3 fs-5">Product Categories</h5>
+                        <ul class="list-unstyled lh-lg">
+                            <li>
+                                <a href="#"
+                                    class="roboto-400 text-white text-decoration-none d-flex align-items-center gap-2"><span
+                                        class="red">›</span> Chicken</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="roboto-400 text-white text-decoration-none d-flex align-items-center gap-2"><span
+                                        class="red">›</span> Beef</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="roboto-400 text-white text-decoration-none d-flex align-items-center gap-2"><span
+                                        class="red">›</span> Mutton</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="roboto-400 text-white text-decoration-none d-flex align-items-center gap-2"><span
+                                        class="red">›</span> Deserts</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="roboto-400 text-white text-decoration-none d-flex align-items-center gap-2"><span
+                                        class="red">›</span> Sweets</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="roboto-400 text-white text-decoration-none d-flex align-items-center gap-2"><span
+                                        class="red">›</span> Veg</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="roboto-400 text-white text-decoration-none d-flex align-items-center gap-2"><span
+                                        class="red">›</span> Chinese</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="roboto-400 text-white text-decoration-none d-flex align-items-center gap-2"><span
+                                        class="red">›</span> Chat</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="roboto-400 text-white text-decoration-none d-flex align-items-center gap-2"><span
+                                        class="red">›</span> Frozen items</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Book A Order -->
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="poppins-700 mb-3 fs-5">Book A Order</h5>
+                        <p class="roboto-400 text-white mb-1">+923142376378</p>
+                        <p class="roboto-400 text-white mb-3">info@bhopalidelights.com</p>
+                        <a href="tel:+923142376378" class="roboto-400 yellow text-decoration-none">Make A Call</a>
+                    </div>
+
+                    <!-- Follow Us -->
+                    <div class="col-lg-2 col-md-6">
+                        <h5 class="poppins-700 mb-3 fs-5">Follow Us</h5>
+                        <div class="d-flex gap-3">
+                            <!-- Custom SVGs or FontAwesome Icons based on preference -->
+                            <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="poppins-700 mb-3 fs-5">Newsletter</h5>
+                        <form class="mb-3">
+                            <div class="input-group">
+                                <input type="email" class="form-control bg-transparent text-white border-secondary"
+                                    placeholder="Your Email" style="box-shadow: none" />
+                                <button class="btn bg-red text-white px-3" type="button">
+                                    <!-- Custom Paper Plane SVG -->
+                                    <svg xmlns="http://w3.org" width="16" height="16" fill="currentColor"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                        <a href="#" class="roboto-400 yellow text-decoration-none">Subscribe Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Bar: Copyright -->
+        <div class="container-fluid bg-white">
+            <div class="container">
+                <div class="row gy-4 gy-md-0 p-0 mt-3 align-items-center">
+                    <div class="d-flex flex-column flex-md-row justify-content-between text-center gap-1 gap-md-0">
+                        <div class="powered-by d-flex gap-1 align-items-center justify-content-center">
+                            <p class="blue m-0 roboto-400">Powered By:</p>
+                            <a href="https://www.digitechinfra.com/" class="text-decoration-none" target="_blank">
+                                <img src="./Images/digitechinfra.png" alt="digitechinfra-logo" class="img-fluid" />
+                            </a>
+                        </div>
+                        <div class="copy-right">
+                            <p class="blue roboto-400 m-0">
+                                Copyright &copy; 2022
+                                <span class="red">Bhopalidelights</span> All rights reserved
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -50,6 +50,10 @@ body {
 .bg-red {
   background: #CC3333;
 }
+.bg-red:hover {
+  background: #CC3333;
+}
+
 
 
 .basket-icon {
@@ -70,6 +74,32 @@ body {
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
   color: #d97706;
+}
+
+
+
+/* Mobile offcanvas menu */
+#mobileNavbar {
+  width: 85%;
+  max-width: 350px;
+  background-color: #fff;
+}
+
+/* Offcanvas links */
+#mobileNavbar .nav-link {
+  color: #222;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#mobileNavbar .nav-link:hover,
+#mobileNavbar .nav-link.active {
+  color: #d62828;
+}
+
+/* Close button */
+#mobileNavbar .btn-close {
+  box-shadow: none;
 }
 
 /* Hero Section  */
@@ -168,6 +198,49 @@ body {
 
 /* Contact Page  */
 
+/* Desktop icons */
+.contact-icon {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border: 1px solid #6c757d;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+/* Mobile offcanvas */
+#contactMobileNavbar {
+  width: 85%;
+  max-width: 350px;
+  background-color: #fff;
+}
+
+#contactMobileNavbar .nav-link {
+  color: #212529;
+  padding: 10px 0;
+}
+
+#contactMobileNavbar .nav-link:hover,
+#contactMobileNavbar .nav-link.active {
+  color: #dc3545;
+}
+
+#contactMobileNavbar .mobile-contact-icon {
+  color: #212529;
+  border-color: #dee2e6;
+}
+
+/* Keep desktop navbar transparent */
+@media (min-width: 992px) {
+  .contact-navbar {
+    background-color: transparent !important;
+  }
+}
+
+
 
 
 .hero-contact {
@@ -189,6 +262,24 @@ body {
   color: #FF9933;
 }
 
-.form-card{
-  margin-left: -75px !important;
+
+@media (min-width:768px) {
+  
+  .form-card{
+    margin-left: -75px !important;
+  }
+  .about-row{
+    position: relative;
+    margin-left: -260px;
+  }
+  .about-cards{
+    width: 240px !important;
+  }
 }
+
+
+.about-cards i{
+  font-size: 50px !important;
+}
+
+
