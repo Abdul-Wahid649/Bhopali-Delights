@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -26,7 +27,7 @@
     >
       <div class="container">
         <!-- Logo -->
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           <img
             src="Images/Layer 2.png"
             alt="Bhopali Delights"
@@ -202,8 +203,15 @@
     >
       <div class="container mt-5 pt-4 mt-md-normal pt-md-0">
         <div class="row text-white">
-          <h1 class="poppins-700">About</h1>
-          <p class="roboto-400">
+          <h1 class="poppins-700" data-aos="fade-down" data-aos-duration="800">
+            About
+          </h1>
+          <p
+            class="roboto-400"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="800"
+          >
             <a href="index.html" class="text-decoration-none text-white"
               >Home</a
             >
@@ -215,6 +223,7 @@
         </div>
       </div>
     </section>
+
     <div
       class="offcanvas offcanvas-end"
       tabindex="-1"
@@ -270,7 +279,13 @@
         <div
           class="row g-4 d-flex flex-column flex-lg-row justify-content-center align-items-center mt-3 mx-md-3 m-0"
         >
-          <div class="col-12 col-lg-6">
+          <!-- Left Content Column - Slides in from Left -->
+          <div
+            class="col-12 col-lg-6"
+            data-aos="fade-right"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
             <div class="p-0 p-lg-3">
               <h5 class="red caveat-400 fs-1 fs-5">About Company</h5>
               <h1 class="poppins-700 fs-1 blue">
@@ -288,17 +303,38 @@
                 regardless of where you discover us, quality will dependably be
                 our formula.
               </p>
-              <p class="poppins-400 my-3 text-justify text-lg-normal">
+
+              <!-- Point 1 with subtle fade-up -->
+              <p
+                class="poppins-400 my-3 text-justify text-lg-normal"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-offset="0"
+              >
                 <span class="red mt-3 fw-bold fs-5">></span> We Believe in
                 Quality. All around. Quality food can’t be made without quality
                 initiative.
               </p>
-              <p class="poppins-400 my-3 text-justify text-lg-normal">
+
+              <!-- Point 2 with staggered delay -->
+              <p
+                class="poppins-400 my-3 text-justify text-lg-normal"
+                data-aos="fade-up"
+                data-aos-delay="400"
+                data-aos-offset="0"
+              >
                 <span class="red mt-3 fw-bold fs-5">></span> Around here, we
                 don’t make do with anything short of food we’re glad to serve.
                 Furthermore, we don’t simply check in.
               </p>
-              <p class="poppins-400 my-3 text-justify text-lg-normal">
+
+              <!-- Point 3 -->
+              <p
+                class="poppins-400 my-3 text-justify text-lg-normal"
+                data-aos="fade-up"
+                data-aos-delay="500"
+                data-aos-offset="0"
+              >
                 <span class="red mt-3 fw-bold fs-5">></span> Not when we can
                 likewise turn into our best, make companions, and have some good
                 times while we’re grinding away. We’re the fast food
@@ -306,7 +342,14 @@
               </p>
             </div>
           </div>
-          <div class="col-12 col-lg-6">
+
+          <!-- Right Image Column - Slides in from Right -->
+          <div
+            class="col-12 col-lg-6"
+            data-aos="fade-left"
+            data-aos-delay="400"
+            data-aos-duration="1200"
+          >
             <div>
               <img src="images/history.png" alt="history" class="img-fluid" />
             </div>
@@ -314,6 +357,7 @@
         </div>
       </div>
     </section>
+
     <!-- Why Choose Us  -->
     <section
       class="section-delivery container-fluid p-3 p-lg-5 overflow-hidden"
@@ -374,18 +418,16 @@
         </div>
       </div>
     </section>
-
-    <!-- Testimonial  -->
     <section class="py-5 position-relative overflow-hidden">
       <div class="container py-4">
         <!-- Section Heading -->
         <div class="text-center mb-5">
-          <h5 class="red caveat-400 fs-5">Testimonial</h5>
-          <h2 class="poppins-700 fs-1">
+          <h5 class="red caveat-400 fs-5" data-aos="fade-down">Testimonial</h5>
+
+          <h2 class="poppins-700 fs-1" data-aos="fade-up">
             Client <span class="red">Feedback</span>
           </h2>
         </div>
-
         <!-- ================================= -->
         <!-- DESKTOP CAROUSEL: 2 Cards, 3 Slides -->
         <!-- ================================= -->
@@ -394,6 +436,7 @@
           class="carousel slide d-none d-lg-block"
           data-bs-ride="carousel"
           data-bs-interval="4000"
+          data-aos="fade-up"
         >
           <div class="carousel-inner px-2">
             <!-- Slide 1 -->
@@ -615,6 +658,7 @@
           class="carousel slide d-lg-none"
           data-bs-ride="carousel"
           data-bs-interval="4000"
+          data-aos="fade-up"
         >
           <div class="carousel-inner px-2">
             <!-- Slide 1 -->
@@ -823,15 +867,17 @@
       <div class="container">
         <!-- Top Bar: Feel Hunger Section -->
         <div
-          class="row align-items-center justify-content-center mb-3 pb-4 px-3 px-md-5 flex-column flex-md-row gy-5 border-md-bottom border-white"
+          class="row align-items-center justify-content-center px-3 px-md-5 flex-column flex-md-row gy-3 border-md-bottom border-white"
         >
           <!-- 1. Start: Logo (col-md-3) -->
           <div class="col-md-3 col-12 text-center text-md-start">
+            <a href="/">
             <img
               src="Images/Layer 2.png"
               alt="Bhopali Delights"
               class="img-fluid h-auto logo-image"
             />
+            </a>
           </div>
 
           <!-- 2. Center: Text (col-md-6) -->
@@ -852,9 +898,9 @@
           </div>
         </div>
 
-        <div class="row align-items-center mb-5 pb-4 px-3 px-md-5">
+        <div class="row align-items-center mb-5 pb-4 px-3 px-md-5 mt-3 mt-lg-5">
           <!-- Middle Bar: Footer Links & Info -->
-          <div class="row gy-4">
+          <div class="row gy-4 gy-lg-0">
             <!-- Product Categories -->
             <div class="col-lg-3 col-md-6">
               <h5 class="poppins-700 mb-3 fs-5">Product Categories</h5>
@@ -1024,5 +1070,12 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
   </body>
 </html>

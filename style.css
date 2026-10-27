@@ -182,7 +182,7 @@ body {
   height: 100vh;
 }
 
-.popular-items {
+.popular-items, .bg-pink {
   background: #FFF8EE;
 }
 
@@ -266,8 +266,9 @@ body {
 
 .contact-footer{
   background:url(Images/contact-footer-bg2.png), url(Images/contact-footer-bg.png);
-  background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+  background-position: start center;
 }
 
 .yellow{
@@ -304,3 +305,144 @@ body {
 }
 
 
+/* ==========================================================================
+   PROMO CARDS SECTIONS HOVER EFFECTS
+   ========================================================================== */
+
+/* 1. Base Structure for all background cards */
+.cards-section .col-lg-5,
+.cards-section .col-lg-3 {
+    position: relative;
+    cursor: pointer;
+    border-radius: 12px; 
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; 
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* 2. Hover properties: Lift up and modern depth shadow */
+.cards-section .col-lg-5:hover,
+.cards-section .col-lg-3:hover {
+    transform: translateY(-8px) scale(1.01) !important; 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25) !important; 
+}
+
+
+.cards-section .name h1 {
+    transition: color 0.3s ease;
+}
+
+
+
+.cards-section .col-lg-5::before,
+.cards-section .col-lg-3::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 0;
+    transition: transform 0.3s ease-out;
+}
+
+/* Content layer management */
+.cards-section .name, 
+.cards-section .para, 
+.cards-section .button {
+    position: relative;
+    z-index: 1; 
+}
+
+/* 5. Button transition integration */
+.cards-section .btn.bg-red {
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.cards-section .col-lg-5:hover .btn.bg-red,
+.cards-section .col-lg-3:hover .btn.bg-red {
+    background-color: #bd2130 !important; 
+    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.4);
+}
+
+
+/* ==========================================================================
+   FOOD CARDS & CATEGORIES HOVER EFFECTS (CUSTOM CSS)
+   ========================================================================== */
+
+.menu .col-6 .border.rounded {
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    cursor: pointer;
+}
+
+.menu .col-6 .border.rounded:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important; 
+    border-color: #dc3545 !important; 
+}
+
+.menu .col-6 .border.rounded:hover img {
+    transform: scale(1.05) rotate(3deg);
+    transition: transform 0.4s ease;
+}
+
+
+.popular-items .col-12 .border.rounded,
+.menu .row:nth-of-type(2) .col-12 .border.rounded {
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
+    background-color: #ffffff !important; 
+}
+
+.popular-items .col-12 .border.rounded:hover,
+.menu .row:nth-of-type(2) .col-12 .border.rounded:hover {
+    transform: translateY(-6px) scale(1.01); 
+    box-shadow: 0 12px 24px rgba(220, 53, 69, 0.12) !important; 
+    border-color: rgba(220, 53, 69, 0.3) !important;
+}
+
+/* Food card ki gol image par zoom effect */
+.items-row2-img img {
+    transition: transform 0.5s ease;
+}
+
+.popular-items .col-12 .border.rounded:hover .items-row2-img img,
+.menu .row:nth-of-type(2) .col-12 .border.rounded:hover .items-row2-img img {
+    transform: scale(1.1); 
+}
+
+
+.food-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out !important;
+    cursor: pointer;
+    background-color: #ffffff !important; 
+}
+
+
+.food-card:hover {
+    transform: translateY(-8px) scale(1.02) !important; 
+    box-shadow: 0 10px 20px rgba(220, 53, 69, 0.15) !important; 
+    border-color: #dc3545 !important; 
+}
+
+.food-card .items-row2-img img {
+    transition: transform 0.4s ease-in-out !important;
+}
+
+.food-card:hover .items-row2-img img {
+    transform: scale(1.1) !important; 
+}
+
+
+
+.btn.bg-red {
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn.bg-red:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 5px 15px rgba(220, 53, 69, 0.4); 
+    background-color: #bd2130 !important; 
+}
