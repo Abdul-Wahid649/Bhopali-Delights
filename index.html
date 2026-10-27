@@ -14,190 +14,156 @@
 
 <body>
   <!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-white py-3 shadow">
-  <div class="container">
+  <nav class="navbar navbar-expand-lg bg-white py-3 shadow">
+    <div class="container">
 
-    <!-- Logo -->
-    <a class="navbar-brand" href="#">
-      <img src="Images/Layer 2.png" alt="Bhopali Delights"
-        class="img-fluid position-absolute top-0 h-auto logo-image" />
-    </a>
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="Images/Layer 2.png" alt="Bhopali Delights"
+          class="img-fluid position-absolute top-0 h-auto logo-image" />
+      </a>
 
-    <!-- Mobile Basket + Toggle -->
-    <div class="d-flex gap-4 align-items-center d-lg-none">
+      <!-- Mobile Basket + Toggle -->
+      <div class="d-flex gap-1 align-items-center d-lg-none">
 
-      <div class="position-relative d-flex align-items-center justify-content-center
-                  bg-red text-white rounded-circle shadow-sm basket-icon">
-        <i class="bi bi-basket-fill fs-5"></i>
+
+        <div class="position-relative d-flex align-items-center justify-content-center
+            bg-red text-white rounded-circle shadow-sm basket-icon" data-bs-toggle="offcanvas"
+          data-bs-target="#cartSection" role="button" style="cursor: pointer;">
+          <i class="bi bi-basket-fill fs-5"></i>
+        </div>
+
+
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#mobileNavbar" aria-controls="mobileNavbar" aria-label="Open navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
       </div>
 
-      <button class="navbar-toggler border-0 shadow-none"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#mobileNavbar"
-        aria-controls="mobileNavbar"
-        aria-label="Open navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <!-- Desktop Navbar -->
+      <div class="collapse navbar-collapse d-none d-lg-flex">
 
-    </div>
+        <ul class="navbar-nav mx-auto mb-0 gap-lg-3">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
 
-    <!-- Desktop Navbar -->
-    <div class="collapse navbar-collapse d-none d-lg-flex">
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
 
-      <ul class="navbar-nav mx-auto mb-0 gap-lg-3">
-        <li class="nav-item">
-          <a class="nav-link active" href="index.html">Home</a>
-        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#menu">Menu</a>
-        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
 
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About Us</a>
-        </li>
+        <div class="right-section d-flex gap-4 align-items-center">
 
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
+          <!-- Desktop Basket -->
+          <div class="position-relative d-flex align-items-center justify-content-center
+                    bg-red text-white rounded-circle shadow-sm basket-icon" data-bs-toggle="offcanvas"
+          data-bs-target="#cartSection" role="button" style="cursor: pointer;">
+            <i class="bi bi-basket-fill fs-5"></i>
 
-      <div class="right-section d-flex gap-4 align-items-center">
-
-        <!-- Desktop Basket -->
-        <div class="position-relative d-flex align-items-center justify-content-center
-                    bg-red text-white rounded-circle shadow-sm basket-icon">
-          <i class="bi bi-basket-fill fs-5"></i>
-
-          <span class="position-absolute top-0 start-100 translate-middle
+            <span class="position-absolute top-0 start-100 translate-middle
                        badge rounded-circle bg-warning text-dark
                        border border-2 border-white">
-            1
-          </span>
-        </div>
-
-        <!-- Delivery -->
-        <div class="delivery d-flex">
-          <div class="cycle">
-            <img src="./Images/IMAGE (10).png" alt="cycle image"
-              class="img-fluid w-75" />
+              0
+            </span>
           </div>
 
-          <div class="order-number d-flex flex-column gap-0">
-            <p class="m-0">delivery order</p>
-            <p class="m-0 poppins-700">
-              <a href="#" class="text-decoration-none red">
-                +923142376378
-              </a>
-            </p>
-          </div>
-        </div>
+          <!-- Delivery -->
+          <div class="delivery d-flex">
+            <div class="cycle">
+              <img src="./Images/IMAGE (10).png" alt="cycle image" class="img-fluid w-75" />
+            </div>
 
-        <!-- Login -->
-        <div class="button">
-          <a href="#menu"
-            class="btn bg-red text-white rounded-3 px-4 d-flex
+            <div class="order-number d-flex flex-column gap-0">
+              <p class="m-0">delivery order</p>
+              <p class="m-0 poppins-700">
+                <a href="#" class="text-decoration-none red">
+                  +923142376378
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Login -->
+          <div class="button">
+            <a href="#menu" class="btn bg-red text-white rounded-3 px-4 d-flex
                    align-items-center justify-content-center">
-            Login
-          </a>
+              Login
+            </a>
+          </div>
+
         </div>
-
       </div>
+
+    </div>
+  </nav>
+
+
+  <!-- Mobile Offcanvas Menu -->
+  <div class="offcanvas offcanvas-start bg-white d-lg-none" tabindex="-1" id="mobileNavbar"
+    aria-labelledby="mobileNavbarLabel">
+
+    <!-- Offcanvas Header -->
+    <div class="offcanvas-header border-bottom">
+
+      <h5 class="offcanvas-title red" id="mobileNavbarLabel">
+        Menu
+      </h5>
+
+      <button type="button" class="btn-close"
+        style="filter: invert(24%) sepia(87%) saturate(2751%) hue-rotate(345deg) brightness(89%) contrast(92%);"
+        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+
     </div>
 
-  </div>
-</nav>
+    <!-- Offcanvas Body -->
+    <div class="offcanvas-body d-flex flex-column">
 
+      <ul class="navbar-nav gap-2">
 
-<!-- Mobile Offcanvas Menu -->
-<div class="offcanvas offcanvas-start bg-white d-lg-none"
-     tabindex="-1"
-     id="mobileNavbar"
-     aria-labelledby="mobileNavbarLabel">
-
-  <!-- Offcanvas Header -->
-  <div class="offcanvas-header border-bottom">
-
-    <h5 class="offcanvas-title" id="mobileNavbarLabel">
-      Menu
-    </h5>
-
-    <button type="button"
-      class="btn-close"
-      data-bs-dismiss="offcanvas"
-      aria-label="Close">
-    </button>
-
-  </div>
-
-  <!-- Offcanvas Body -->
-  <div class="offcanvas-body d-flex flex-column">
-
-    <ul class="navbar-nav gap-2">
-
-      <li class="nav-item">
-        <a class="nav-link py-2"
-           href="index.html"
-           data-bs-dismiss="offcanvas">
-          Home
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link py-2"
-           href="#menu"
-           data-bs-dismiss="offcanvas">
-          Menu
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link py-2"
-           href="about.html"
-           data-bs-dismiss="offcanvas">
-          About Us
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link py-2"
-           href="contact.html"
-           data-bs-dismiss="offcanvas">
-          Contact
-        </a>
-      </li>
-
-    </ul>
-
-    <!-- Mobile Delivery -->
-    <div class="delivery d-flex align-items-center gap-2 mt-4">
-      <div class="cycle">
-        <img src="./Images/IMAGE (10).png"
-          alt="cycle image" class="img-fluid"
-          style="width: 55px;" />
-      </div>
-
-      <div class="order-number">
-        <p class="m-0">Delivery Order</p>
-        <p class="m-0 poppins-700">
-          <a href="tel:+923142376378"
-             class="text-decoration-none red">
-            +923142376378
+        <li class="nav-item">
+          <a class="nav-link py-2" href="index.html" >
+            Home
           </a>
-        </p>
-      </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link py-2" href="#menu" >
+            Menu
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link py-2" href="about.html" >
+            About Us
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link py-2" href="contact.html">
+            Contact
+          </a>
+        </li>
+
+      </ul>
+
+      <!-- Mobile Login -->
+      <a href="#menu" class="btn bg-red text-white rounded-3 mt-4 w-100" data-bs-dismiss="offcanvas">
+        Login
+      </a>
+
     </div>
-
-    <!-- Mobile Login -->
-    <a href="#menu"
-       class="btn bg-red text-white rounded-3 mt-4 w-100"
-       data-bs-dismiss="offcanvas">
-      Login
-    </a>
-
   </div>
-</div>
 
   <!-- Hero-section  -->
   <section class="hero-section container-fluid d-flex justify-content-center align-items-center">
@@ -214,6 +180,39 @@
       </div>
     </div>
   </section>
+  <!-- Shopping Cart Side Drawer -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartSection" aria-labelledby="cartSectionLabel">
+  <!-- Header Section -->
+  <div class="offcanvas-header border-bottom">
+    <h5 class="offcanvas-title poppins-700 red" id="cartSectionLabel">
+      <i class="bi bi-basket-fill me-2"></i>Your Basket
+    </h5>
+    <button type="button" class="btn-close"
+        style="filter: invert(24%) sepia(87%) saturate(2751%) hue-rotate(345deg) brightness(89%) contrast(92%);"
+        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column justify-content-between">
+    <div class="text-center my-auto py-5">
+      <i class="bi bi-cart-x red" style="font-size: 3.5rem;"></i>
+      <p class="text-muted mt-3 fs-5">Your Cart is empty.</p>
+      <button class="btn btn-sm btn-outline-danger rounded-pill px-4" data-bs-dismiss="offcanvas">
+        Shopping continue
+      </button>
+    </div>
+    <div class="border-top pt-3 bg-white mt-auto">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <span class="fw-bold text-muted text-uppercase">Total amount:</span>
+        <span class="fs-4 fw-bolder text-dark">Rs. 0.00</span>
+      </div>
+      <button class="btn bg-red text-white rounded-3  d-flex
+                   align-items-center justify-content-center w-100">
+        Proceed to Checkout
+      </button>
+    </div>
+
+  </div>
+</div>
+
   <!-- Cards  -->
   <section class="cards-section container-fluid">
     <div class="container my-5">
@@ -640,7 +639,7 @@
     </div>
 
   </section>
-    <!-- Our Chef  -->
+  <!-- Our Chef  -->
   <section class="section-delivery container-fluid p-3 p-lg-5 overflow-hidden">
     <div class="container">
 
@@ -674,7 +673,7 @@
 
   </section>
 
- 
+
 
 
   <!-- Footer Section -->
@@ -837,7 +836,7 @@
           <div class="powered-by d-flex gap-1 align-items-center justify-content-center">
             <p class="blue m-0 roboto-400">Powered By: </p>
             <a href="https://www.digitechinfra.com/" class="text-decoration-none" target="_blank">
-            <img src="./Images/digitechinfra.png" alt="digitechinfra-logo" class="img-fluid"></a>
+              <img src="./Images/digitechinfra.png" alt="digitechinfra-logo" class="img-fluid"></a>
 
           </div>
         </div>
