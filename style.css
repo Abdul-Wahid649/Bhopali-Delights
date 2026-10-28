@@ -8,7 +8,7 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .poppins-700 {
@@ -174,14 +174,14 @@ body {
   background: #CC3333;
 }
 
+
 /* Choose Us  */
-.choose-us {
+/* .choose-us {
   background: url(Images/Frame\ \(14\).png);
   background-position: center center;
   background-size: cover;
   height: 100vh;
-}
-
+} */
 .popular-items, .bg-pink {
   background: #FFF8EE;
 }
@@ -194,6 +194,24 @@ body {
   background-size: cover;
 }
 
+/* About Page  */
+
+/* 
+.about-history-bg{
+  background: url(Images/about-history-bg2.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+}
+
+
+.choose-us-bg{
+  background: url(Images/choose-us-bg.png);
+  background-size: contain;
+  background-position: center;
+  
+} */
 
 
 /* Contact Page  */
@@ -240,6 +258,49 @@ body {
   }
 }
 
+
+
+.chef-heading {
+  font-size: 44px;
+  color: #19262b;
+}
+
+.chef-arrow {
+  width: 55px;
+  height: 55px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #67A405;
+  color: white;
+  font-size: 30px;
+  line-height: 1;
+  transition: background-color 0.3s ease;
+}
+
+.chef-arrow:hover {
+  background-color: #548800;
+}
+
+.chef-name{
+  font-size: 19px !important;
+}
+
+.chefSwiper {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+
+
+@media (max-width: 575.98px) {
+  
+
+  .chef-arrow {
+    width: 42px;
+    height: 42px;
+    font-size: 24px;
+  }
+}
 
 
 
